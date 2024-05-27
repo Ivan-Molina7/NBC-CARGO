@@ -1,0 +1,25 @@
+{
+  "name": "dw-ivanmolina_308767",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run buildCSS && npm run copyHTML & npm run copyAssets",
+    "buildCSS": "sass scss/estilos.scss css/estilos.min.css --style compressed",
+    "start": "sass --watch scss/estilos.scss css/estilos.min.css",
+    "copy": "copyfiles *.html dist",
+    "copyHTML": "copyfiles *.html dist",
+    "copyAssets": "copyfiles assets/*.webp dist & copyfiles assets/*.svg dist"
+    },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.77.2"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
+  }
+}

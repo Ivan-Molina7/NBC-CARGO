@@ -1,0 +1,39 @@
+/*Colores*/
+
+$color-principal: #1e90cf;
+$color-secundario: #1d1d1b;
+$color-terciario: #fff;
+
+$fondo-primario: #fff;
+$fondo-terciario: #F0F2F5;
+$fondo-default: black;
+
+$btn-primary: $color-principal !default;
+
+
+/*Fuente*/
+$fuente-principal: 'Poppins', sans-serif;
+
+.accordion-item {	 
+    
+   
+}
+
+.accordion-button{
+    padding: 25px !important;
+    outline: none !important;
+}
+
+/* Remove blue outline on accordion-button focus */
+.accordion-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.accordion-button:not(.collapsed) {
+    color: $color-terciario !important;
+    background-color: $color-principal !important;
+
+}
+.accordion-button:not(.collapsed)::after {
+
+}

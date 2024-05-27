@@ -1,0 +1,28 @@
+.header--component{
+  height: 100%;
+}
+
+
+@media (max-width: 767px) {
+
+.navbar-collapse {
+  padding: 3rem 1.5rem;
+}
+
+.menu-custom {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  background-color: $color-secundario; /* Asegúrate de que coincida con el color de fondo de tu menú */
+  z-index: 1; /* Para asegurarte de que esté por encima del contenido del héroe */
+}
+}
+
+.color-dark *{
+  color: $color-secundario !important;
+
+  button{
+    color: $color-terciario !important;
+  }
+}

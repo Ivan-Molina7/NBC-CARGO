@@ -1,0 +1,23 @@
+.hero {
+    background:  url('../assets/index/hero.png') no-repeat center center  ;
+    background-size: cover;
+    height: 70vh;
+    color: white;
+    opacity: 100%;
+    position: relative;
+  }
+
+
+  .hero-content {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -100px;
+  }
+
+.empresas-asociadas{
+  margin-top: 60px;
+}

@@ -1,0 +1,144 @@
+body{
+  font-family: $fuente-principal;
+}
+
+
+.logo-img{
+    width: 80px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: $color-principal;
+  text-align: center;
+}
+
+.img--md{
+  width: 120px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo-img--xl{
+    width: 280px;
+}
+
+.bg-default{
+    background-color: $fondo-default !important;
+} 
+
+
+// Párrafos
+.p-main {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 1em;
+  }
+  
+  .p-secondary {
+    font-size: 14px;
+    line-height: 1.4;
+  
+    margin-bottom: 0.8em;
+  }
+  
+  .title-text {
+    font-size: 24px;
+    font-weight: bold;
+
+  }
+
+  // Encabezados
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+  
+  h3 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  h4 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Media queries para ajustar los tamaños de los títulos en diferentes tamaños de pantalla */
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 36px;
+    }
+  
+    h2 {
+      font-size: 32px;
+    }
+  
+    h3 {
+      font-size: 28px;
+    }
+  
+    h4 {
+      font-size: 22px;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    h1 {
+      font-size: 32px;
+    }
+  
+    h2 {
+      font-size: 28px;
+    }
+  
+    h3 {
+      font-size: 24px;
+    }
+  
+    h4 {
+      font-size: 18px;
+    }
+  }
+  
+  @media only screen and (max-width: 375px) {
+    h1 {
+      font-size: 28px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    h3 {
+      font-size: 20px;
+    }
+  
+    h4 {
+      font-size: 16px;
+    }
+  }
+
+  ul{
+    list-style: none !important;
+  }
+
+  a{
+    text-decoration: none !important;
+    color: white !important;
+  }
+
+  section{
+    margin: 150px 0;
+  }
+
+  
