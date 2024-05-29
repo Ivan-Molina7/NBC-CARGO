@@ -16,7 +16,7 @@
 
 
         &-item img {
-            height: 700px !important;
+            height: 700px ;
             object-fit: cover;
         }
 
@@ -28,7 +28,9 @@
         //     background-color:$fondo-primario !important;
         // }
 
-    
+            h5{
+                font-size: 2rem;
+            }
     }
 }
 
@@ -133,7 +135,15 @@
     }
 }
 
+.card-text{
+    @extend .p-main;
+  }
 
+  .directivos-nbc{
+    padding: 100px;
+    background-color: $fondo-terciario;
+    margin-bottom: 0;
+  }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 /* Media query para hacer que los elementos se muestren uno debajo del otro en pantallas de 600px hacia abajo */
@@ -176,4 +186,16 @@
         left: 0 !important;
     }
 
+}
+
+@media  (max-width: 576px) {
+    .carousel {
+
+
+        &-item img {
+            height: 400px !important;
+            object-fit: cover;
+        }
+
+}
 }

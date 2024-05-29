@@ -26,54 +26,40 @@ $fuente-principal: 'Poppins', sans-serif;
     color: #fff;
     cursor: pointer;
     display: inline-block;
-
     font-size: 16px;
     font-weight: 700;
     line-height: 1.5;
     margin: 0;
     max-width: none;
-
-
+    background-color: $color-principal !important;
     outline: none;
     overflow: hidden;
-    padding: 9px 20px 8px;
+    padding: 10px 20px 10px 20px !important;
     position: relative;
     text-align: center;
     text-transform: none;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-  }
+    animation: all 0.5s ease-in !important;
+    -webkit-animation: all .5s ease-in !important;
+    border: none !important;
+}
   
   .btn:hover,
   .btn:focus {
+
     opacity: .75;
   }
   
-$btn-primary: $color-principal !important;
 
 
 
-.accordion-item {	 
-    
-   
-}
-
-.accordion-button{
-    padding: 25px !important;
-    outline: none !important;
-}
-
-/* Remove blue outline on accordion-button focus */
-.accordion-button:focus {
-    outline: none !important;
-    box-shadow: none !important;
-}
-.accordion-button:not(.collapsed) {
-    color: $color-terciario !important;
-    background-color: $color-principal !important;
+.carousel-control-prev-icon,.carousel-control-next-icon, .carousel-indicators{
+    filter: grayscale(100%) !important;
+    -webkit-filter: brightness(0) invert(1)!important;
 
 }
-.accordion-button:not(.collapsed)::after {
 
-}
+
+

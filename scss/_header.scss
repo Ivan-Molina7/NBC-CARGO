@@ -1,12 +1,15 @@
-.header--component{
-  height: 100%;
-}
+// .header--component{
+//   height: 100%;
+// }
+
+
+
 
 
 @media (max-width: 767px) {
 
-.navbar-collapse {
-  padding: 3rem 1.5rem;
+.navbar-collapse ul{
+  padding: 2rem 1.5rem;
 }
 
 .menu-custom {
@@ -14,9 +17,18 @@
   width: 100%;
   top: 100%;
   left: 0;
-  background-color: $color-secundario; /* Asegúrate de que coincida con el color de fondo de tu menú */
-  z-index: 1; /* Para asegurarte de que esté por encima del contenido del héroe */
+  background-color: $color-secundario; 
+  z-index: 1; 
 }
+}
+
+/*Header sin hero incluido*/
+.navbar-toggler--dark{
+  background-color: $color-secundario;
+
+  .navbar-toggler-icon{
+    color: $color-principal;
+  }
 }
 
 .color-dark *{
@@ -24,5 +36,22 @@
 
   button{
     color: $color-terciario !important;
+  }
+}
+
+
+
+.color-white *{
+  color: $color-terciario !important;
+
+  button{
+    color: $color-terciario !important;
+  }
+}
+
+@media (min-width: 767px) {
+
+  .color-white *{
+    color: $color-secundario !important;
   }
 }

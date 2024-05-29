@@ -13,15 +13,19 @@
   line-height: 1.5;
   margin: 0;
   max-width: none;
+  background-color: #1e90cf !important;
   outline: none;
   overflow: hidden;
-  padding: 9px 20px 8px;
+  padding: 10px 20px 10px 20px !important;
   position: relative;
   text-align: center;
   text-transform: none;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  animation: all 0.5s ease-in !important;
+  -webkit-animation: all 0.5s ease-in !important;
+  border: none !important;
 }
 
 .btn:hover,
@@ -29,20 +33,9 @@
   opacity: 0.75;
 }
 
-.accordion-button {
-  padding: 25px !important;
-  outline: none !important;
-}
-
-/* Remove blue outline on accordion-button focus */
-.accordion-button:focus {
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-.accordion-button:not(.collapsed) {
-  color: #fff !important;
-  background-color: #1e90cf !important;
+.carousel-control-prev-icon, .carousel-control-next-icon, .carousel-indicators {
+  filter: grayscale(100%) !important;
+  -webkit-filter: brightness(0) invert(1) !important;
 }
 
 /*!
@@ -11917,6 +11910,12 @@ i {
   object-fit: cover;
 }
 
+.img--lg {
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+}
+
 .logo-img--xl {
   width: 280px;
 }
@@ -11930,62 +11929,92 @@ i {
   margin: 0 auto;
 }
 
-@media (max-width: 767px) {
-  .centrado-md {
-    width: 100%;
-  }
+.centrado-sm {
+  width: 80%;
+  margin: 0 auto;
 }
-.p-main {
-  font-size: 16px;
+
+.accordion-button {
+  padding: 25px !important;
+  outline: none !important;
+}
+
+/* Remove blue outline on accordion-button focus */
+.accordion-button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff !important;
+  background-color: #1e90cf !important;
+}
+
+ul {
+  list-style: none !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+section {
+  margin: 150px 0;
+}
+
+.p-main, .info-grupo p, .card-text, .accordion-body > * {
+  font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 1em;
 }
 
 .p-secondary {
-  font-size: 14px;
+  font-size: 0.9rem;
   line-height: 1.4;
   margin-bottom: 0.8em;
 }
 
 .title-text {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 h1, .h1 {
   font-size: 40px;
-  font-weight: bold;
 }
 
 h2, .h2 {
   font-size: 36px;
-  font-weight: bold;
   margin-bottom: 3rem;
 }
 
 h3, .h3 {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: regular;
 }
 
 h4, .h4 {
   font-size: 24px;
-  font-weight: bold;
 }
 
-/* Media queries para ajustar los tamaños de los títulos en diferentes tamaños de pantalla */
-@media only screen and (max-width: 768px) {
-  h1, .h1 {
-    font-size: 36px;
+/* Mediaquery para tamaños de pantalla más pequeños */
+@media (max-width: 767px) {
+  .centrado-md {
+    width: 100%;
   }
-  h2, .h2 {
-    font-size: 32px;
+  .p-main, .info-grupo p, .card-text, .accordion-body > * {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 0.8em;
   }
-  h3, .h3 {
-    font-size: 28px;
+  .p-secondary {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.6em;
   }
-  h4, .h4 {
-    font-size: 22px;
+  .title-text {
+    font-size: 1rem;
+    font-weight: bold;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -12016,36 +12045,27 @@ h4, .h4 {
     font-size: 16px;
   }
 }
-ul {
-  list-style: none !important;
-}
-
-a {
-  text-decoration: none !important;
-  color: white !important;
-}
-
-section {
-  margin: 150px 0;
-}
-
-.header--component {
-  height: 100%;
-}
-
 @media (max-width: 767px) {
-  .navbar-collapse {
-    padding: 3rem 1.5rem;
+  .navbar-collapse ul {
+    padding: 2rem 1.5rem;
   }
   .menu-custom {
     position: absolute;
     width: 100%;
     top: 100%;
     left: 0;
-    background-color: #1d1d1b; /* Asegúrate de que coincida con el color de fondo de tu menú */
-    z-index: 1; /* Para asegurarte de que esté por encima del contenido del héroe */
+    background-color: #1d1d1b;
+    z-index: 1;
   }
 }
+/*Header sin hero incluido*/
+.navbar-toggler--dark {
+  background-color: #1d1d1b;
+}
+.navbar-toggler--dark .navbar-toggler-icon {
+  color: #1e90cf;
+}
+
 .color-dark * {
   color: #1d1d1b !important;
 }
@@ -12053,8 +12073,20 @@ section {
   color: #fff !important;
 }
 
+.color-white * {
+  color: #fff !important;
+}
+.color-white * button {
+  color: #fff !important;
+}
+
+@media (min-width: 767px) {
+  .color-white * {
+    color: #1d1d1b !important;
+  }
+}
 .hero {
-  background: url("../assets/index/hero.png") no-repeat center center;
+  background: url("../assets/index/hero3.jpg") no-repeat center 10%;
   background-size: cover;
   height: 70vh;
   color: white;
@@ -12076,15 +12108,38 @@ section {
   margin-top: 60px;
 }
 
+.nbc-resumen {
+  height: auto;
+}
+
+.nbc-resumen > div {
+  height: 100%;
+}
+
+.nbc-resumen__thumbnail {
+  height: 100%;
+}
+
+.nbc-resumen__thumbnail img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .nbc-resumen {
+    height: auto;
+  }
+}
 .footer {
   height: auto;
+  background: url("../assets/global/footer2.jpg") no-repeat center 70%;
   background-size: cover;
   background-color: #1e90cf;
   display: grid;
   padding: 3rem;
   color: white !important;
   gap: 2rem !important;
-  border-top: 2px solid rgba(0, 0, 0, 0.217);
 }
 .footer .p-secondary {
   margin: 0;
@@ -12186,11 +12241,14 @@ section {
   height: 100%;
 }
 .reconocimientos .carousel-item img {
-  height: 700px !important;
+  height: 700px;
   object-fit: cover;
 }
 .reconocimientos .carousel .carousel-caption {
   color: #fff !important;
+}
+.reconocimientos .carousel h5, .reconocimientos .carousel .h5 {
+  font-size: 2rem;
 }
 
 .timeline-section {
@@ -12278,6 +12336,12 @@ section {
   text-align: center;
 }
 
+.directivos-nbc {
+  padding: 100px;
+  background-color: #F0F2F5;
+  margin-bottom: 0;
+}
+
 /* Media queries - Responsive timeline on screens less than 600px wide */
 /* Media query para hacer que los elementos se muestren uno debajo del otro en pantallas de 600px hacia abajo */
 /* Media query para pantallas de 600px o menos */
@@ -12310,6 +12374,12 @@ section {
   }
   .right {
     left: 0 !important;
+  }
+}
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 400px !important;
+    object-fit: cover;
   }
 }
 iframe {

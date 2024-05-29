@@ -45,6 +45,7 @@ iframe{
 
 
 .info-grupo p{
+    @extend .p-main;
     margin-bottom: .2rem;
 }
  /* Añade reglas de CSS para hacer los círculos más grandes en pantallas más grandes */

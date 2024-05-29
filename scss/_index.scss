@@ -1,5 +1,5 @@
 .hero {
-    background:  url('../assets/index/hero.png') no-repeat center center  ;
+    background:  url('../assets/index/hero3.jpg') no-repeat center 10%  ;
     background-size: cover;
     height: 70vh;
     color: white;
@@ -20,4 +20,28 @@
 
 .empresas-asociadas{
   margin-top: 60px;
+}
+
+.nbc-resumen{
+  height: auto;
+}
+
+.nbc-resumen > div{
+  height: 100%;
+}
+
+.nbc-resumen__thumbnail {
+  height: 100%
+  }
+
+.nbc-resumen__thumbnail img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .nbc-resumen{
+    height: auto ;
+  }
 }

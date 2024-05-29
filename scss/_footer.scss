@@ -4,14 +4,13 @@
 .footer{
 
     height: auto;
-    // background:  url('../assets/index/hero.png') no-repeat center center  ;
+    background: url('../assets/global/footer2.jpg') no-repeat center 70%; 
     background-size: cover;
     background-color: $color-principal;
     display: grid;
     padding: 3rem;
     color: white !important;
     gap: 2rem !important;
-    border-top: 2px solid rgba(0, 0, 0, 0.217);
 
     .p-secondary{
         margin: 0;
