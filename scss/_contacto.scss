@@ -1,0 +1,50 @@
+iframe{
+    height: 400px !important;
+}
+
+.form-container, .locacion-container{
+    margin: 100px auto;
+}
+
+.form-container{
+    margin-top: 50px;
+}
+
+.info-container{
+    height: 400px;
+    background-color: rgb(241, 241, 241);
+
+    a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: $color-principal;
+        text-decoration: none;
+        color: inherit;
+        margin: 5px;
+        text-align: center;
+    }
+    
+    a i {
+        font-size: 1.3em !important;
+    }
+    
+ 
+   
+}
+
+@media screen and (min-width: 768px) {
+    .info-container a {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+.info-grupo p{
+    margin-bottom: .2rem;
+}
+ /* Añade reglas de CSS para hacer los círculos más grandes en pantallas más grandes */

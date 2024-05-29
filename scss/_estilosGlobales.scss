@@ -2,6 +2,10 @@ body{
   font-family: $fuente-principal;
 }
 
+i{
+  font-size: 24px;
+}
+
 
 .logo-img{
     width: 80px;
@@ -30,6 +34,18 @@ body{
     background-color: $fondo-default !important;
 } 
 
+
+.centrado-md{
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 767px) {
+  .centrado-md{
+      width: 100%;
+  }
+}
 
 // Párrafos
 .p-main {
