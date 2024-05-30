@@ -11934,6 +11934,11 @@ i {
   margin: 0 auto;
 }
 
+.centrado-sm--phone {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .accordion-button {
   padding: 25px !important;
   outline: none !important;
@@ -11961,6 +11966,17 @@ a {
 
 section {
   margin: 150px 0;
+}
+
+.section-0 {
+  margin: 0 !important;
+  background-color: #F0F2F5;
+  margin-bottom: 150px !important;
+}
+
+.section-top {
+  margin-top: 0 !important;
+  margin-bottom: 150px !important;
 }
 
 .p-main, .info-grupo p, .card-text, .accordion-body > * {
@@ -11997,6 +12013,12 @@ h4, .h4 {
   font-size: 24px;
 }
 
+@media (min-width: 768px) {
+  .centrado-sm--phone {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 /* Mediaquery para tamaños de pantalla más pequeños */
 @media (max-width: 767px) {
   .centrado-md {
@@ -12019,30 +12041,30 @@ h4, .h4 {
 }
 @media only screen and (max-width: 576px) {
   h1, .h1 {
-    font-size: 32px;
+    font-size: 32px !important;
   }
   h2, .h2 {
-    font-size: 28px;
+    font-size: 28px !important;
   }
   h3, .h3 {
-    font-size: 24px;
+    font-size: 24px !important;
   }
   h4, .h4 {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 @media only screen and (max-width: 375px) {
   h1, .h1 {
-    font-size: 28px;
+    font-size: 28px !important;
   }
   h2, .h2 {
-    font-size: 24px;
+    font-size: 24px !important;
   }
   h3, .h3 {
-    font-size: 20px;
+    font-size: 20px !important;
   }
   h4, .h4 {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 @media (max-width: 767px) {
@@ -12055,7 +12077,7 @@ h4, .h4 {
     top: 100%;
     left: 0;
     background-color: #1d1d1b;
-    z-index: 1;
+    z-index: 777;
   }
 }
 /*Header sin hero incluido*/
@@ -12088,7 +12110,7 @@ h4, .h4 {
 .hero {
   background: url("../assets/index/hero3.jpg") no-repeat center 10%;
   background-size: cover;
-  height: 70vh;
+  height: 75vh;
   color: white;
   opacity: 100%;
   position: relative;
@@ -12101,11 +12123,23 @@ h4, .h4 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: -100px;
+  margin-top: -100px !important;
+}
+.hero-content h1, .hero-content .h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+.hero-content h3, .hero-content .h3 {
+  font-weight: 300;
 }
 
 .empresas-asociadas {
   margin-top: 60px;
+  height: 25vh;
+}
+
+.empresa-asociada__thumbnail {
+  margin: 0;
 }
 
 .nbc-resumen {
@@ -12129,6 +12163,14 @@ h4, .h4 {
 @media (max-width: 992px) {
   .nbc-resumen {
     height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .empresas-asociadas {
+    height: auto;
+  }
+  .oficio * {
+    text-align: left;
   }
 }
 .footer {
@@ -12337,7 +12379,7 @@ h4, .h4 {
 }
 
 .directivos-nbc {
-  padding: 100px;
+  padding: 100px 0;
   background-color: #F0F2F5;
   margin-bottom: 0;
 }
@@ -12403,7 +12445,7 @@ iframe {
 
 .info-container {
   height: 400px;
-  background-color: rgb(241, 241, 241);
+  background-color: #F0F2F5;
 }
 .info-container a {
   display: inline-flex;

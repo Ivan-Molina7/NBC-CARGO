@@ -1,7 +1,9 @@
+
+
 .hero {
     background:  url('../assets/index/hero3.jpg') no-repeat center 10%  ;
     background-size: cover;
-    height: 70vh;
+    height: 75vh;
     color: white;
     opacity: 100%;
     position: relative;
@@ -15,11 +17,24 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: -100px;
+    margin-top: -100px !important;
+
+    h1{
+      font-size: 3.5rem;
+      font-weight: 500;
+    }
+    h3{
+      font-weight:300;
+    }
   }
 
 .empresas-asociadas{
   margin-top: 60px;
+  height: 25vh;
+}
+
+.empresa-asociada__thumbnail{
+  margin: 0;
 }
 
 .nbc-resumen{
@@ -40,8 +55,21 @@ width: 100%;
 object-fit: cover;
 }
 
+
 @media (max-width: 992px) {
   .nbc-resumen{
     height: auto ;
   }
 }
+@media (max-width: 767px) {
+  .empresas-asociadas{
+    height: auto;
+  }
+
+  .oficio *{
+    text-align: left;
+  }
+
+}
+
+

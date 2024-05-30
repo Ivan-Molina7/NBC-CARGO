@@ -50,6 +50,11 @@ i {
   margin: 0 auto;
 }
 
+.centrado-sm--phone{
+  width: 80%;
+  margin: 0 auto;
+}
+
 
 .accordion-button {
   padding: 25px !important;
@@ -83,11 +88,27 @@ a {
   color: white !important;
 }
 
+// Margenes
+
+
+$margin: 150px;
+
 section {
-  margin: 150px 0;
+  margin: $margin 0;
 
 }
 
+.section-0 {
+  margin: 0 !important;
+  background-color: $fondo-terciario;
+  margin-bottom: $margin !important;
+}
+
+
+.section-top{
+  margin-top: 0 !important;
+  margin-bottom: $margin !important;
+}
 
 
 
@@ -131,6 +152,18 @@ h4 {
 
 
 
+
+@media (min-width: 768px) {
+  .centrado-sm--phone{
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  
+
+}
+
+
 /* Mediaquery para tamaños de pantalla más pequeños */
 @media (max-width: 767px) {
   .centrado-md {
@@ -157,36 +190,36 @@ h4 {
 
 @media only screen and (max-width: 576px) {
   h1 {
-    font-size: 32px;
+    font-size: 32px !important;
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 28px  !important;
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 24px !important;
   }
 
   h4 {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 
 @media only screen and (max-width: 375px) {
   h1 {
-    font-size: 28px;
+    font-size: 28px !important;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 24px !important;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 
   h4 {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
