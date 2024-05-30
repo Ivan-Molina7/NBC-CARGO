@@ -11930,8 +11930,16 @@ i {
   object-fit: cover;
 }
 
+.footer__logo {
+  width: 100% !important;
+}
+.footer__logo .figure {
+  width: 100% !important;
+}
+
 .logo-img--xl {
-  width: 280px;
+  max-width: 300px;
+  width: 100% !important;
 }
 
 .bg-default {
