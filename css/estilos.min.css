@@ -12390,8 +12390,15 @@ iframe {
   margin: 100px auto;
 }
 
-.form-container {
+.form-container, .locacion-container {
   margin-top: 50px;
+}
+.form-container .p-secondary, .locacion-container .p-secondary {
+  color: #1e90cf;
+}
+
+.input-group .form-control {
+  width: 50% !important;
 }
 
 .info-container {

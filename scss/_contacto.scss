@@ -6,9 +6,21 @@ iframe{
     margin: 100px auto;
 }
 
-.form-container{
+.form-container, .locacion-container{
     margin-top: 50px;
+
+    .p-secondary{
+        color: $color-principal;
+    }
 }
+
+.input-group{
+    .form-control{
+        width: 50% !important;
+    }
+}
+
+
 
 .info-container{
     height: 400px;
@@ -49,3 +61,4 @@ iframe{
     margin-bottom: .2rem;
 }
  /* Añade reglas de CSS para hacer los círculos más grandes en pantallas más grandes */
+
