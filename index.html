@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -38,11 +38,10 @@
                 <a class="nav-link" href="#">Preguntas frecuentes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Tracking</a>
+                <a class="nav-link " href="contacto.html">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="contacto.html"><button type="button"
-                    class="btn btn-primary">Contacto</button></a>
+                <a class="nav-link " ><button type="button"class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Tracking</button></a>
               </li>
             </ul>
           </div>
@@ -61,6 +60,66 @@
           class="fa-solid fa-arrow-right"></i> -->
     </div>
   </div>
+
+
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Rastrear envío</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex flex-column align-content-center gap-2">
+              <h5>Ingrese el numero de guía</h5>
+              <div class="input-group input-group--modal row d-flex justify-content-between gap-3 ">
+                  <input type="text" maxlength="3" class="form-control lh-lg mb col-3" id="master" name="master"
+                      aria-describedby="master" placeholder="Master" required
+                      title="Solo se permiten valores numéricos.">
+                  <input type="text" maxlength="8" class="form-control lh-lg col-5" id="house" name="house"
+                      aria-describedby="house" placeholder="House" required
+                      title="Solo se permiten valores numéricos.">
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+         
+
+<button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="trackearEnvio()">Trackear</button>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+<script>
+  function trackearEnvio() {
+      var master = document.getElementById('master').value;
+      var house = document.getElementById('house').value;
+  
+      // Crea un formulario dinámicamente
+      var form = document.createElement('form');
+      form.method = 'POST';
+      form.action = 'https://www.aacargo.com/AACargo/tracking'; // URL de la página de seguimiento de American Airlines Cargo
+  
+      // Agrega los campos master y house al formulario
+      var masterInput = document.createElement('input');
+      masterInput.type = 'hidden';
+      masterInput.name = 'awbCode_0';
+      masterInput.value = master;
+      form.appendChild(masterInput);
+  
+      var houseInput = document.createElement('input');
+      houseInput.type = 'hidden';
+      houseInput.name = 'awbNumber_0';
+      houseInput.value = house;
+      form.appendChild(houseInput);
+  
+      // Agrega el formulario al cuerpo del documento y luego envíalo
+      document.body.appendChild(form);
+      form.submit();
+  }
+  </script>
 
   <section class="empresas-asociadas section-0 py-5 ">
 

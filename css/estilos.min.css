@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /*Colores*/
 /*Fuente*/
+.modal-content {
+  color: #1d1d1b !important;
+}
+
 .btn {
   border-radius: 4px;
   border-style: none;
@@ -13,7 +17,7 @@
   line-height: 1.5;
   margin: 0;
   max-width: none;
-  background-color: #1e90cf !important;
+  background-color: #1e90cf;
   outline: none;
   overflow: hidden;
   padding: 10px 20px 10px 20px !important;
@@ -11979,6 +11983,14 @@ section {
   margin-bottom: 150px !important;
 }
 
+.input-group--modal {
+  width: 100%;
+  margin: 0 auto;
+}
+.input-group--modal .form-control {
+  width: 40% !important;
+}
+
 .p-main, .info-grupo p, .card-text, .accordion-body > * {
   font-size: 1rem;
   line-height: 1.5;
@@ -12440,7 +12452,7 @@ iframe {
 }
 
 .input-group .form-control {
-  width: 50% !important;
+  width: 45%;
 }
 
 .info-container {

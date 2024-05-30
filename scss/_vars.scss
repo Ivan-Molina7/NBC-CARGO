@@ -15,7 +15,9 @@ $btn-primary: $color-principal !default;
 $fuente-principal: 'Poppins', sans-serif;
 
 
-
+.modal-content{
+   color: $color-secundario !important;
+}
 
 
 
@@ -31,7 +33,7 @@ $fuente-principal: 'Poppins', sans-serif;
     line-height: 1.5;
     margin: 0;
     max-width: none;
-    background-color: $color-principal !important;
+    background-color: $color-principal ;
     outline: none;
     overflow: hidden;
     padding: 10px 20px 10px 20px !important;
