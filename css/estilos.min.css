@@ -11930,6 +11930,13 @@ i {
   object-fit: cover;
 }
 
+.img-responsive {
+  height: 100% !important;
+  object-fit: cover;
+  width: 80%;
+  max-width: 250px;
+}
+
 .footer__logo {
   width: 100% !important;
 }
@@ -12105,6 +12112,10 @@ h4, .h4 {
     font-size: 16px !important;
   }
 }
+header {
+  z-index: 666;
+}
+
 @media (max-width: 767px) {
   .navbar-collapse ul {
     padding: 2rem 1.5rem;
@@ -12177,7 +12188,10 @@ h4, .h4 {
 }
 
 .empresa-asociada__thumbnail {
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .nbc-resumen {
@@ -12283,7 +12297,7 @@ h4, .h4 {
     grid-template-rows: 1fr;
     justify-content: space-between;
     height: 400px;
-    gap: 1rem;
+    gap: 0rem !important;
   }
   .footer__logo {
     grid-column: 1/2;
@@ -12311,6 +12325,10 @@ h4, .h4 {
 }
 .reconocimientos {
   margin: 0 0 150px 0 !important;
+}
+.reconocimientos h2, .reconocimientos .h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 .reconocimientos .carousel {
   height: auto !important;
@@ -12355,11 +12373,12 @@ h4, .h4 {
   content: "";
   position: absolute;
   width: 6px;
-  background-color: #939597;
+  background-color: rgba(147, 149, 151, 0.2274509804);
   top: 0;
   bottom: 0;
   left: 50%;
   margin-left: -3px;
+  z-index: 1;
 }
 .timeline-section .timeline {
   position: relative;
@@ -12376,7 +12395,7 @@ h4, .h4 {
   border: 5px solid #1e90cf;
   top: 15px;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 50;
 }
 .timeline-section .left {
   padding: 0px 40px 20px 0px;
@@ -12423,9 +12442,11 @@ h4, .h4 {
   margin-bottom: 0;
 }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
-/* Media query para hacer que los elementos se muestren uno debajo del otro en pantallas de 600px hacia abajo */
-/* Media query para pantallas de 600px o menos */
+@media (max-width: 767px) {
+  .reconocimientos {
+    margin: 0 !important;
+  }
+}
 @media screen and (max-width: 600px) {
   /* Aplicar estilos para la línea de tiempo en pantallas pequeñas */
   .main-timeline::after {

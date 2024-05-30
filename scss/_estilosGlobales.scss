@@ -32,6 +32,13 @@ i {
   object-fit: cover;
 }
 
+.img-responsive {
+  height: 100% !important;
+  object-fit: cover;
+  width:80%;
+  max-width: 250px;
+}
+
 .footer__logo{
   width: 100% !important;
   .figure{

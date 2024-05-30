@@ -34,7 +34,10 @@
 }
 
 .empresa-asociada__thumbnail{
-  margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+  width: 100%;
 }
 
 .nbc-resumen{
