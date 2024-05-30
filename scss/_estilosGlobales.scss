@@ -99,15 +99,15 @@ section {
 }
 
 .section-0 {
-  margin: 0 !important;
+  margin: 0 ;
   background-color: $fondo-terciario;
-  margin-bottom: $margin !important;
+  margin-bottom: $margin ;
 }
 
 
 .section-top{
-  margin-top: 0 !important;
-  margin-bottom: $margin !important;
+  margin-top: 0 ;
+  margin-bottom: $margin ;
 }
 
 
@@ -195,6 +195,24 @@ h4 {
     font-size: 1rem;
     font-weight: bold;
   }
+
+  section {
+    margin:  100px 0;
+  
+  }
+
+  .section-0 {
+
+    margin-bottom: 100px !important;
+  }
+  
+  
+  .section-top{
+   
+    margin-bottom: 100px  !important;
+  }
+  
+
 }
 
 @media only screen and (max-width: 576px) {

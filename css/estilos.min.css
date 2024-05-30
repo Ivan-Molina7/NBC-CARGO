@@ -11973,14 +11973,14 @@ section {
 }
 
 .section-0 {
-  margin: 0 !important;
+  margin: 0;
   background-color: #F0F2F5;
-  margin-bottom: 150px !important;
+  margin-bottom: 150px;
 }
 
 .section-top {
-  margin-top: 0 !important;
-  margin-bottom: 150px !important;
+  margin-top: 0;
+  margin-bottom: 150px;
 }
 
 .input-group--modal {
@@ -12049,6 +12049,15 @@ h4, .h4 {
   .title-text {
     font-size: 1rem;
     font-weight: bold;
+  }
+  section {
+    margin: 100px 0;
+  }
+  .section-0 {
+    margin-bottom: 100px !important;
+  }
+  .section-top {
+    margin-bottom: 100px !important;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -12391,7 +12400,7 @@ h4, .h4 {
 }
 
 .directivos-nbc {
-  padding: 100px 0;
+  padding: 100px 50px;
   background-color: #F0F2F5;
   margin-bottom: 0;
 }
