@@ -37,6 +37,16 @@
   opacity: 0.75;
 }
 
+.btn-scroll {
+  position: absolute;
+  right: 20px;
+  top: -60px;
+  display: none;
+  z-index: 150;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .carousel-control-prev-icon, .carousel-control-next-icon, .carousel-indicators {
   filter: grayscale(100%) !important;
   -webkit-filter: brightness(0) invert(1) !important;
@@ -11896,7 +11906,7 @@ i {
 }
 
 .logo-img {
-  width: 80px;
+  width: 150px;
   height: 100%;
   object-fit: cover;
 }
@@ -12194,6 +12204,7 @@ h4, .h4 {
   }
 }
 .footer {
+  position: relative;
   height: auto;
   background: url("../assets/global/footer2.jpg") no-repeat center 70%;
   background-size: cover;
@@ -12291,7 +12302,7 @@ h4, .h4 {
   }
 }
 .reconocimientos {
-  margin-top: 50px;
+  margin: 0 0 150px 0 !important;
 }
 .reconocimientos .carousel {
   height: auto !important;
@@ -12450,6 +12461,7 @@ iframe {
 
 .form-container, .locacion-container {
   margin: 100px auto;
+  position: relative;
 }
 
 .form-container, .locacion-container {

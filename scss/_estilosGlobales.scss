@@ -1,5 +1,6 @@
 body {
   font-family: $fuente-principal;
+
 }
 
 i {
@@ -8,7 +9,7 @@ i {
 
 
 .logo-img {
-  width: 80px;
+  width: 150px;
   height: 100%;
   object-fit: cover;
 }
@@ -88,10 +89,11 @@ a {
   color: white !important;
 }
 
+
 // Margenes
 
 
-$margin: 150px;
+
 
 section {
   margin: $margin 0;

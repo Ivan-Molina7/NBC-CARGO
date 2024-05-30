@@ -12,36 +12,34 @@
 </head>
 
 <body>
-  <header>
-    <nav class=" navbar navbar-expand-md navbar-dark " aria-label="Fourth navbar example">
+  <header id="header">
+    <nav class=" navbar navbar-expand-md navbar-dark " aria-label="Navbar">
       <div class="container-fluid px-4">
 
-        <a class="navbar-brand" href="index.html"><img src="assets/global/logo.png" alt="Logo de la empresa"
+        <a class="navbar-brand" href="index.html"><img src="assets/global/LogoBlanco.png" alt="Logo de la empresa"
             class="logo-img"></a>
 
-        <button class="navbar-toggler navbar-toggler--dark" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
-          aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+          aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse menu-custom" id="navbarsExample04">
           <ul class="navbar-nav ms-auto mb-2 mb-md-0 d-flex gap-2 align-items-center color-white">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sobre Nosotros</a>
+              <a class="nav-link" href="sobreNosotros.html">Sobre Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Preguntas frecuentes</a>
+              <a class="nav-link" href="index.html#faq">Preguntas frecuentes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Tracking</a>
+              <a class="nav-link " href="contacto.html">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="contacto.html"><button type="button"
-                  class="btn btn-primary">Contacto</button></a>
+              <a class="nav-link " ><button type="button"class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Tracking</button></a>
             </li>
           </ul>
         </div>
@@ -49,9 +47,54 @@
       </div>
     </nav>
   </header>
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Rastrear Envío</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4"> <!-- Añadido p-4 para más padding -->
+        <p class="mb-1 p-main">Explore la opción de seguimiento de envíos ofrecida por NBC Cargo, que le permite acceder a los servicios de rastreo proporcionados por nuestras empresas asociadas líderes en la industria.</p>
+        <p class="mb-4 p-secondary">En las páginas de estas empresas necesitará ingresar el código de aerolínea de tres dígitos junto con el número de guía de carga aérea de ocho dígitos (ejemplo: 001 87654321) para cada envío que desee rastrear. Haga clic en el botón de seguimiento para iniciar su búsqueda.</p>
+      
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="card">
+              <div class="card-body text-center">
+                <img src="assets/index/lufthansa.png" class="img-fluid mb-3" alt="Logo lufthansa">
+                <a href="https://www.lufthansa-cargo.com/es/eservices/etracking" class="btn btn-primary" target="_blank">Rastrear Envío</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card">
+              <div class="card-body text-center">
+                <img src="assets/index/american.png" class="img-fluid mb-3" alt="Logo american">
+                <a href="https://www.aacargo.com/AACargo/tracking" class="btn btn-primary" target="_blank">Rastrear Envío</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card">
+              <div class="card-body text-center">
+                <img src="assets/index/latam.png" class="img-fluid mb-3" alt="Logo latam">
+                <a href="https://www.latamcargo.com/en/trackshipment" class="btn btn-primary" target="_blank">Rastrear Envío</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-  <section class="reconocimientos text-center">
+  <section class="reconocimientos text-center" id="nbcReconocimientos">
     <h2>RECONOCIMIENTOS</h2>
     <div id="carouselExampleDark" class="carousel carousel-dark slide container-lg ">
       <div class="carousel-indicators">
@@ -98,7 +141,7 @@
     </div>
   </section>
 
-  <section class="timeline-section">
+  <section class="timeline-section" id="nbcHistoria">
     <h2>NUESTRA HISTORIA</h2>
     <div class="container py-2">
       <div class="main-timeline">
@@ -162,7 +205,7 @@
 
 
 
-  <section class="valores-nbc">
+  <section class="valores-nbc" id="nbcValores">
     <div class="container">
       <!-- <div class="row text-center mb-4">
 
@@ -239,7 +282,7 @@
   </section>
 
 
-  <section class="directivos-nbc ">
+  <section class="directivos-nbc " id="nbcDirectivos">
     <div class="container ">
       <div class="row justify-content-center mb-4">
         <div class="col-md-7 text-center">
@@ -287,56 +330,70 @@
 
 
   <footer class="footer px-5">
+    <a href="#header">
+    <button  class="btn btn-primary btn-scroll">
+      <i class="fa-solid fa-chevron-up"></i>
+      </button></a>
+
     <div class="footer__logo">
-      <figure><img src="assets/global/LogoBlanco.png" alt="Logo de la empresa" class="logo-img--xl img-fluid"></figure>
-      <p class="p-secondary"><b>Derechos Reservados 2024 de NBC CARGO©</b></p>
+        <figure><img src="assets/global/LogoBlanco.png" alt="Logo de la empresa" class="logo-img--xl img-fluid">
+        </figure>
+        <p class="p-secondary"><b>Derechos Reservados 2024 de NBC CARGO©</b></p>
     </div>
     <div class="footer__nav">
 
-      <div class="col center">
-        <h4 class="pb-2 title-text">Inicio</h4>
-        <ul class="p-0  d-flex flex-column gap-2">
-          <li><a href="#">Empresas Asociadas</a></li>
-          <li><a href="#">Sobre Nosotros</a></li>
-          <li><a href="#">Nuestro oficio</a></li>
-          <li><a href="#">Preguntas frecuentes</a></li>
-        </ul>
-      </div>
+        <div class="col center">
+            <h4 class="pb-2 title-text">Inicio</h4>
+            <ul class="p-0  d-flex flex-column gap-2">
+                <li><a href="index.html#empresasAsociadas">Empresas Asociadas</a></li>
+                <li><a href="index.html#nbcResumen">Sobre Nosotros</a></li>
+                <li><a href="index.html#nbcOficio">Nuestro oficio</a></li>
+                <li><a href="index.html#faq">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+      
+     
+        
+        
+        <div class="col">
+            <h4 class="pb-2 title-text">Sobre Nosotros</h4>
+            <ul class="p-0 d-flex flex-column gap-2">
+                <li><a href="#nbcReconocimientos">Reconocimientos</a></li>
+                <li><a href="#nbcHistoria">Historia de NBC</a></li>
+                <li><a href="#nbcValores">Valores</a></li>
+                <li><a href="#nbcDirectivos">Directivos</a></li>
+            </ul>
+        </div>
+        
+        
 
-      <div class="col">
-        <h4 class="pb-2 title-text">Sobre Nosotros</h4>
-        <ul class="p-0 d-flex flex-column gap-2">
-          <li><a href="#">Empresas Asociadas</a></li>
-          <li><a href="#">Sobre Nosotros</a></li>
-          <li><a href="#">Nuestro oficio</a></li>
-        </ul>
-      </div>
+        <div class="col">
+            <h4 class="pb-2 title-text">Contacto</h4>
+            <ul class="p-0 d-flex flex-column gap-2">
+                <li><a href="contacto.html#nbcFormularioContacto ">Empresas Asociadas</a></li>
+                <li><a href="contacto.html#nbcUbicacion">Sobre Nosotros</a></li>
 
-      <div class="col">
-        <h4 class="pb-2 title-text">Contacto</h4>
-        <ul class="p-0 d-flex flex-column gap-2">
-          <li><a href="#">Empresas Asociadas</a></li>
-          <li><a href="#">Sobre Nosotros</a></li>
-
-        </ul>
-      </div>
+            </ul>
+        </div>
     </div>
     <div class="footer__media">
-      <h4 class="title-text">Expertos en Importaciones Globales</h4>
-      <div class="footer__sociales-container d-flex gap-4">
-        <ul class="sociales-container__info p-0 text-start d-flex flex-column gap-2">
-          <li><b class="pe-2">Teléfono:</b>+598 87 654 321</li>
-          <li><b class="pe-2">Email:</b>nbccargo@gmail.com</li>
-          <li><b class="pe-2">Dirección:</b>Rincón 625</li>
-        </ul>
-        <div class="sociales-container__redes d-flex  gap-2">
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <h4 class="title-text">Expertos en Importaciones Globales</h4>
+
+        <div class="footer__sociales-container d-flex gap-4">
+            <ul class="sociales-container__info p-0 text-start d-flex flex-column gap-2">
+                <li><b class="pe-2">Teléfono:</b>+598 87 654 321</li>
+                <li><b class="pe-2">Email:</b>nbccargo@gmail.com</li>
+                <li><b class="pe-2">Dirección:</b>Rincón 625</li>
+            </ul>
+            <div class="sociales-container__redes d-flex  gap-3">
+                <a href="http://nbccargo.com.uy/" target = _blank><i class="fa-brands fa-facebook"></i></a>
+                <a href="http://nbccargo.com.uy/"  target = _blank><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="http://nbccargo.com.uy/"  target = _blank><i class="fa-brands fa-instagram"></i></a>
+            </div>
         </div>
-      </div>
     </div>
-  </footer>
+</footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
     </script>
