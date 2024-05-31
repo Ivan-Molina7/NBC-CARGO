@@ -11,8 +11,7 @@
     "copyAssets": "cpx \"assets/**/*\" dist/assets",
     "purgeCss": "purgecss --css css/estilos.min.css --content *.html -o dist/css/estilos.min.css --rejected 'path/to/bootstrap.css'",
     "build": "npm run buildCSS && npm run copyHTML && npm run copyAssets && mkdir dist\\css 2> nul && cp css\\estilos.min.css dist\\css"
-  },
-  
+    },
   "keywords": [],
   "author": "",
   "license": "ISC",
