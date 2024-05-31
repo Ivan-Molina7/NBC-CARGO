@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run buildCSS && npm run copyHTML & npm run copyAssets",
     "buildCSS": "sass scss/estilos.scss css/estilos.min.css --style compressed",
     "start": "sass --watch scss/estilos.scss css/estilos.min.css",
-    "copy": "copyfiles *.html dist",
-    "copyHTML": "copyfiles *.html dist",
-    "copyAssets": "copyfiles assets/*.webp dist & copyfiles assets/*.svg dist"
-    },
+    "copyHTML": "cpx \"*.html\" dist",
+    "copyAssets": "cpx \"assets/**/*\" dist/assets",
+    "purgeCss": "purgecss --css css/estilos.min.css --content *.html -o dist/css/estilos.min.css --rejected 'path/to/bootstrap.css'",
+    "build": "npm run buildCSS && npm run copyHTML && npm run copyAssets && mkdir dist\\css 2> nul && xcopy /y css\\estilos.min.css dist\\css"
+  },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "sass": "^1.77.2"
   },
   "devDependencies": {
-    "copyfiles": "^2.4.1"
+    "copyfiles": "^2.4.1",
+    "cpx": "^1.5.0"
   }
 }

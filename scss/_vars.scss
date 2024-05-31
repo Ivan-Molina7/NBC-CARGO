@@ -20,59 +20,65 @@ $margin: 150px;
    color: $color-secundario !important;
 }
 
-
-
 .btn{
-    border-radius: 4px;
-    border-style: none;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.5;
-    margin: 0;
-    max-width: none;
-    background-color: $color-principal ;
-    outline: none;
-    overflow: hidden;
-    padding: 10px 20px 10px 20px !important;
-    position: relative;
-    text-align: center;
-    text-transform: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    animation: all 0.5s ease-in !important;
-    -webkit-animation: all .5s ease-in !important;
-    border: none !important;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  background-color: $color-principal !important;
+  outline: none;
+  overflow: hidden;
+  padding: 10px 20px 10px 20px !important;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  animation: all 0.5s ease-in !important;
+  -webkit-animation: all .5s ease-in !important;
+  border: none !important;
 }
-  
+
+
+
   .btn:hover,
   .btn:focus {
-
     opacity: .75;
   }
-  
 
+  .btn-secondary{
+    background-color: $color-secundario !important;
+  }
+  
   .btn-scroll {
     position: absolute;
     right: 20px;
     top: -60px;
-    display: none;
-    z-index: 150;
+    display: block;
+    /*Aseguramosqueelbotónseavisibleparalademostración*/z-index: 150;
     border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
+    transition: top 0.1s ease-in-out !important;
+    /*Usamosunatransiciónparasuavizarelmovimiento*/animation-duration: 2s all;
+    -webkit-transition: top 0.1s ease-in-out !important;
+    -moz-transition: top 0.1s ease-in-out !important;
+    -ms-transition: top 0.1s ease-in-out !important;
+    -o-transition: top 0.1s ease-in-out !important;
+}
 
+.btn-scroll:hover {
+    top: -65px !important; /* Movemos el icono hacia arriba */
+}
 
 .carousel-control-prev-icon,.carousel-control-next-icon, .carousel-indicators{
     filter: grayscale(100%) !important;
     -webkit-filter: brightness(0) invert(1)!important;
 
 }
-
-
-
