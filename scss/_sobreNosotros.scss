@@ -203,7 +203,7 @@
     .carousel {
 
 
-        &-item img {
+        .carousel-item-img  {
             height: 400px !important;
             object-fit: cover;
         }

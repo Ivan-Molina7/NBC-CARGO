@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <div class="hero d-flex flex-column bg-default">
+  <div class="hero d-flex flex-column " id="hero">
     <!-- Header -->
     <header id="header">
       <nav class=" navbar navbar-expand-md navbar-dark " aria-label="Navbar">
@@ -81,7 +81,7 @@
           <div class="col-lg-4 mb-4">
             <div class="card" >
               <div class="card-body text-center">
-                <img src="assets/index/lufthansa.webp" class="img-fluid mb-3" alt="Logo lufthansa">
+                <img src="assets/index/lufhtansa.webp" class="img-fluid mb-3" alt="Logo lufthansa">
                 <a href="https://www.lufthansa-cargo.com/es/eservices/etracking" class="btn btn-primary" target="_blank">Rastrear Envío</a>
               </div>
             </div>
@@ -141,32 +141,84 @@
   }
   </script> -->
 
-  <section class="empresas-asociadas section-0 py-5 " id="empresasAsociadas" >
+  <section class="empresas-asociadas section-0 py-5" id="empresasAsociadas">
 
-    <div class="row container-md d-flex justify-content-center align-items-center m-auto gap-5 gap-sm-0">
-
-      <div class="col-12 col-sm-4 empresa-asociada  d-flex flex-column justify-content-center align-items-center px-2" data-aos="fade-up" data-aos-delay="500">
-        <figure class="empresa-asociada__thumbnail">
-          <img src="assets/index/lufthansa.webp" alt="Logo de la empresa" class="img-responsive">
-        </figure>
+    <div id="carouselExample" class="carousel slide height-100" data-bs-ride="carousel">
+      <div class="carousel-inner height-100">
+  
+        <div class="carousel-item active height-100">
+          <div class="height-100 row container-md d-flex justify-content-center align-items-center m-auto gap-5 gap-sm-0">
+            <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column justify-content-center align-items-center px-2" data-aos="fade-up" data-aos-delay="500">
+              <figure class="empresa-asociada__thumbnail">
+                <img src="assets/index/lufhtansa.webp" alt="Logo de la empresa" class="img-responsive">
+              </figure>
+            </div>
+            <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="400">
+              <figure class="empresa-asociada__thumbnail">
+                <img src="assets/index/american.webp" alt="Logo de la empresa" class="img-responsive">
+              </figure>
+            </div>
+            <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="300">
+              <figure class="empresa-asociada__thumbnail">
+                <img src="assets/index/latam.webp" alt="Logo de la empresa" class="img-responsive">
+              </figure>
+            </div>
+          </div>
+        </div>
+  
+        <div class="carousel-item height-100">
+          <div class="height-100 row container-md d-flex justify-content-center align-items-center m-auto gap-5 gap-sm-0">
+            <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column justify-content-center align-items-center px-2" data-aos="fade-up" data-aos-delay="500">
+              <figure class="empresa-asociada__thumbnail">
+                <img src="assets/index/lufhtansa.webp" alt="Logo de la empresa 1" class="img-responsive">
+              </figure>
+            </div>
+            <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="400">
+              <figure class="empresa-asociada__thumbnail">
+                <img src="assets/index/american.webp" alt="Logo de la empresa 2" class="img-responsive">
+              </figure>
+            </div>
+            <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="300">
+              <figure class="empresa-asociada__thumbnail">
+                <img src="assets/index/latam.webp" alt="Logo de la empresa 3" class="img-responsive">
+              </figure>
+            </div>
+          </div>
+        </div>
+  
+        <div class="carousel-item height-100">
+          <div class="height-100 row container-md d-flex justify-content-center align-items-center m-auto gap-5 gap-sm-0">
+            <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column justify-content-center align-items-center px-2" data-aos="fade-up" data-aos-delay="500">
+              <figure class="empresa-asociada__thumbnail">
+                <img src="assets/index/latam.webp" alt="Logo de la empresa 4" class="img-responsive">
+              </figure>
+            </div>
+            <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="400">
+              <figure class="empresa-asociada__thumbnail">
+                <img src="assets/index/lufhtansa.webp" alt="Logo de la empresa 5" class="img-responsive">
+              </figure>
+            </div>
+            <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="300">
+              <figure class="empresa-asociada__thumbnail">
+                <img src="assets/index/american.webp" alt="Logo de la empresa 6" class="img-responsive">
+              </figure>
+            </div>
+          </div>
+        </div>
+  
       </div>
-
-      <div class="col-12 col-sm-4 empresa-asociada  d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="400">
-        <figure class="empresa-asociada__thumbnail">
-          <img src="assets/index/american.webp" alt="Logo de la empresa" class="img-responsive">
-        </figure>
-
-      </div>
-
-      <div class="col-12 col-sm-4 empresa-asociada  d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="300">
-        <figure class="empresa-asociada__thumbnail">
-          <img src="assets/index/latam.webp" alt="Logo de la empresa" class="img-responsive">
-        </figure>
-
-      </div>
-
+  
+      <button class="carousel-control-prev color-primario" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+   
+        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next color-primario" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+        <span class="visually-hidden ">Next</span>
+      </button>
     </div>
-
+  
   </section>
 
   <section class="nbc-resumen px-2 centrado-sm  section-top" id="nbcResumen" data-aos="fade-up">
@@ -196,7 +248,6 @@
 
   </section>
 
-
   <section class="oficio centrado-sm--phone" id="nbcOficio" >
     <h2 class="text-center" data-aos="fade-up">¿QUÉ HACEMOS?</h2>
   
@@ -204,7 +255,8 @@
       
       <div class="col-12 col-md-3 empresa-asociada d-flex flex-column align-items-center " data-aos="fade-up" data-aos-delay="300">
         <figure class="empresa-asociada__thumbnail ">
-          <img src="assets/index/metodo1.webp" alt="Servicio Terrestre" class="img--md">
+          <img src="assets/index/metodo1.webp" alt="Servicio Terrestre" class="img--md" aria-describedby="    Icon by https://freeicons.io/profile/383127 kusnadi tia nurjaman on https://freeicons.io freeicons.io">
+      
         </figure>
         <h3>Servicio Terrestre</h3>
         <p class="p-main">Proporcionamos transporte terrestre seguro y eficiente para sus mercancías. Ya sea que necesite entregas locales o nacionales, nuestras soluciones de transporte terrestre garantizan puntualidad y cuidado en cada envío.</p>
@@ -212,7 +264,7 @@
       
       <div class="col-12 col-md-3 empresa-asociada d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="400">
         <figure class="empresa-asociada__thumbnail">
-          <img src="assets/index/metodo2.webp" alt="Servicio Aéreo" class="img--md">
+          <img src="assets/index/metodo2.webp" alt="Servicio Aéreo" class="img--md" aria-describedby="Icon by https://freeicons.io/profile/8908> EDT.Graphics on https://freeicons.io freeicons.io">
         </figure>
         <h3>Servicio Aéreo</h3>
         <p class="p-main">Ofrecemos servicios de carga aérea rápidos y confiables para envíos urgentes y de alto valor. Con una red global de aerolíneas y un equipo dedicado, aseguramos que su carga llegue a tiempo a cualquier destino internacional.</p>
@@ -220,10 +272,10 @@
   
       <div class="col-12 col-md-3 empresa-asociada d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="500">
         <figure class="empresa-asociada__thumbnail">
-          <img src="assets/index/metodo3.webp" alt="Servicio de Transporte" class="img--md">
+          <img src="assets/index/metodo3.webp" alt="Servicio de Transporte" class="img--md" aria-describedby="Icon by https://freeicons.io/undefined/vehicles-and-transport-ship-sea-cruise-navigation-icon-44314 Vehicles and Transport">
         </figure>
-        <h3>Transporte Especializado</h3>
-        <p class="p-main">Nuestro servicio especializado incluye el transporte seguro y cuidadoso de animales, incluidos caballos. Con vehículos equipados específicamente para el transporte animal y personal entrenado, garantizamos la seguridad y comodidad de sus animales durante todo el trayecto.</p>
+        <h3>Servicio Marítimo</h3>
+        <p class="p-main">Brindamos soluciones de transporte marítimo para cargas voluminosas y de larga distancia. Con alianzas estratégicas con las principales navieras, gestionamos envíos internacionales con eficiencia y seguridad, asegurando que sus mercancías lleguen a tiempo y en perfectas condiciones.</p>
       </div>
   
     </div>
@@ -241,10 +293,7 @@
       </h2>
       <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faq">
         <div class="accordion-body">
-          <p><strong>NBC CARGO ofrece una amplia gama de servicios logísticos.</strong> Esto incluye carga marítima,
-            carga aérea, logística y distribución, almacenamiento, transporte terrestre, gestión de aduanas, seguros de
-            carga y consultoría en comercio internacional. Nos esforzamos por proporcionar soluciones personalizadas que
-            se adapten a las necesidades específicas de cada cliente.</p>
+          <p><strong>NBC CARGO ofrece una amplia gama de servicios logísticos.</strong>  Esto incluye carga marítima, carga aérea, logística y distribución, almacenamiento, gestión de aduanas, seguros de carga y consultoría en comercio internacional. Nos esforzamos por proporcionar soluciones personalizadas que se adapten a las necesidades específicas de cada cliente.</p>
         </div>
       </div>
     </div>
@@ -257,9 +306,7 @@
       </h2>
       <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faq">
         <div class="accordion-body">
-          <p><strong>Puede rastrear su envío fácilmente.</strong> Proporcionamos una plataforma en línea donde puede
-            ingresar su número de seguimiento y obtener actualizaciones en tiempo real sobre el estado de su envío.
-            Además, puede contactar a nuestro servicio de atención al cliente para obtener asistencia adicional.</p>
+          <p><strong>Puede rastrear su envío fácilmente.</strong> Proporcionamos una plataforma en línea donde puede ingresar su número de seguimiento y obtener actualizaciones en tiempo real sobre el estado de su envío. Además, se puede contactar con nosotros para obtener asistencia adicional.</p>
         </div>
       </div>
     </div>
@@ -303,10 +350,7 @@
       </h2>
       <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faq">
         <div class="accordion-body">
-          <p><strong>Sí, ofrecemos seguros de carga.</strong> NBC CARGO se asocia con aseguradoras líderes para
-            proporcionar cobertura integral para sus envíos. Esto garantiza que sus mercancías estén protegidas contra
-            pérdidas o daños durante el tránsito. Puede solicitar más información sobre nuestras opciones de seguro de
-            carga al contactar a nuestro equipo de ventas.</p>
+          <p><strong>Sí, ofrecemos seguros de carga.</strong> NBC CARGO se asocia con aseguradoras líderes para proporcionar cobertura integral para sus envíos. Esto garantiza que sus mercancías estén protegidas contra pérdidas o daños durante el tránsito. Puede solicitar más información sobre nuestras opciones de seguro de carga al contactarnos</p>
         </div>
       </div>
     </div>
@@ -383,6 +427,26 @@
         </div>
     </div>
 </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const hero = document.querySelector('.hero');
+  const backgroundImages = ['url("../assets/index/hero3.webp")', 'url("../assets/index/hero2.webp")'];
+  let currentIndex = 0;
+
+  function slideBackground() {
+    hero.style.transition = 'background-image 1s '; // Agregar transición
+    hero.style.backgroundImage = backgroundImages[currentIndex];
+    currentIndex++;
+    if (currentIndex >= backgroundImages.length) {
+      currentIndex = 0;
+    }
+  }
+
+  setInterval(slideBackground, 7000); // Cambiar imagen cada 5 segundos
+});
+
+</script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

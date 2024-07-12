@@ -1,16 +1,26 @@
-
-
+/*
+ <h1>Lider de mercado</h1>
+      <h1>Facilitando tus Importaciones Globales</h1>
+      <h3>Expertos en Logística de Importación y Aduanas</h3>
+      <a href="sobreNosotros.html" class="btn btn-primary mt-3 d-flex align-items-center gap-2">Sobre Nosotros </a>
+      <!-- <i
+          class="fa-solid fa-arrow-right"></i> -->
+*/
 .hero {
-    background:  url('../assets/index/hero3.webp') no-repeat center 10%  ;
-    background-size: cover;
-    height: 75vh;
-    color: white;
-    opacity: 100%;
-    position: relative;
-  }
+  background-image: url('../assets/index/hero3.webp'), url('../assets/index/hero2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  color: white;
+  opacity: 100%;
+  overflow: hidden;
+  position: relative;
+}
 
 
   .hero-content {
+    z-index: 500;
     text-align: center;
     height: 100%;
     display: flex;
@@ -30,7 +40,11 @@
 
 .empresas-asociadas{
   margin-top: 60px;
-  height: 25vh;
+  height: 24vh;
+}
+
+.height-100{
+  height: 100%;
 }
 
 .empresa-asociada__thumbnail{
@@ -38,7 +52,10 @@ display: flex;
 justify-content: center;
 align-items: center;
   width: 100%;
+  margin: 0 !important;
 }
+
+
 
 .nbc-resumen{
   height: auto;
@@ -73,6 +90,14 @@ object-fit: cover;
     text-align: left;
   }
 
+}
+
+@media screen and (max-width: 576px) {
+  .empresa-asociada__thumbnail img{
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: contain !important;  
+  }
 }
 
 
