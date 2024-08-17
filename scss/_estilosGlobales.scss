@@ -82,6 +82,14 @@ i {
   margin: 0 auto;
 }
 
+.error {
+  color: rgb(211, 12, 12);
+  font-size: 0.875em;
+}
+.invalid {
+  border-color: rgb(211, 12, 12);
+}
+
 
 .accordion-button {
   padding: 25px !important;
@@ -204,7 +212,7 @@ h4 {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .centrado-sm--phone{
     width: 100%;
     margin: 0 auto;

@@ -39,7 +39,50 @@
     }
 }
 
+
+.nbc-description{
+       margin: 0 !important;
+        min-height: 700px;
+
+        width: 100%;
+        position: relative;
+        background-color: black;
+        padding: 0 ;
+        gap: 2em;
+
+        .nbc-description__video-container{
+            position: absolute;
+            height: 100% ;
+            width: 100%;
+            z-index: 1;
+            opacity: 10%;
+        
+            .nbc-description__video{
+                height: 100% ;
+                width: 100%;
+       
+                object-fit: cover;
+
+               
+            }
+        }
+    
+        .nbc-description__thumbnail{
+            z-index: 100;
+        }
+
+
+        .nbc-description__content{
+            z-index: 100;
+            color: $color-terciario;
+            width: 60%;
+        }
+    
+}
+
 .timeline-section {
+    margin-top: 0 !important;
+
     padding: 100px 0;
     background-color: $fondo-terciario;
 
@@ -167,6 +210,14 @@
 
 @media screen and (max-width: 600px) {
 
+
+    .nbc-description{
+        padding: 4em 0 !important;
+
+        .nbc-description__content{
+            width: 80% !important;
+        }
+    }
 
     /* Aplicar estilos para la línea de tiempo en pantallas pequeñas */
     .main-timeline::after {

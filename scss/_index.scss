@@ -7,7 +7,7 @@
           class="fa-solid fa-arrow-right"></i> -->
 */
 .hero {
-  background-image: url('../assets/index/hero3.webp'), url('../assets/index/hero2.png');
+  background-image: url('../assets/index/hero3.webp'), url('../assets/index/hero2.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -76,6 +76,50 @@ object-fit: cover;
 }
 
 
+.oficio__servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.oficio__servicio {
+  padding: 16px 10px;
+  background-color: #f0f0f0; /* Sustituir con el color deseado */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto flotante */
+  border-radius: 8px; /* Bordes redondeados */
+ 
+  flex: 1 1 calc(33.33% - 1em); /* Ocupa 1/3 del ancho con margen */
+  max-width: calc(33.33% - 1em);/* Asegura que el ancho máximo no exceda 1/3 */
+  min-width: 385px; 
+}
+
+
+.oficio__servicio::before {
+  content: '•'; /* Agrega un punto antes del texto */
+  font-size: 1.5em;
+  color: #3498db; /* Color del punto */
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .oficio__servicios {
+
+    flex-direction: column; /* Coloca los ítems en una columna en pantallas pequeñas */
+    padding: 0;
+    margin: 50px 0 0 0;
+    width: 100%;
+  }
+
+  .oficio__servicio {
+
+    min-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
+
+
 @media (max-width: 992px) {
   .nbc-resumen{
     height: auto ;
@@ -94,7 +138,7 @@ object-fit: cover;
 
 @media screen and (max-width: 576px) {
   .empresa-asociada__thumbnail img{
-    width: 100% !important;
+    width: 50% !important;
     height: 200px !important;
     object-fit: contain !important;  
   }
