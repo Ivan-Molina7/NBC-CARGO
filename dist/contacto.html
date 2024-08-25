@@ -58,51 +58,141 @@
   </header>
 
 
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="staticBackdropLabel">Rastrear Envío</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body p-4"> <!-- Añadido p-4 para más padding -->
-          <p class="mb-1 p-main">Explore la opción de seguimiento de envíos ofrecida por NBC Cargo, que le permite
-            acceder a los servicios de rastreo proporcionados por nuestras empresas asociadas líderes en la industria.
-          </p>
-          <p class="mb-4 p-secondary">En las páginas de estas empresas necesitará ingresar el código de aerolínea de
-            tres dígitos junto con el número de guía de carga aérea de ocho dígitos (ejemplo: 001 87654321) para cada
-            envío que desee rastrear. Haga clic en el botón de seguimiento para iniciar su búsqueda.</p>
-
-          <div class="row">
-            <div class="col-lg-4 mb-4">
-              <div class="card">
-                <div class="card-body text-center">
-                  <img src="assets/index/lufthansa.webp" class="img-fluid mb-3" alt="Logo lufthansa">
-                  <a href="https://www.lufthansa-cargo.com/es/eservices/etracking" class="btn btn-primary"
-                    target="_blank">Rastrear Envío</a>
+        <div class="modal-body p-4">
+          <p class="mb-1 p-main">Explore la opción de seguimiento de envíos ofrecida por NBC Cargo, que le permite acceder a los servicios de rastreo proporcionados por nuestras empresas asociadas líderes en la industria.</p>
+          <p class="mb-4 p-secondary">En las páginas de estas empresas necesitará ingresar el código de aerolínea de tres dígitos junto con el número de guía de carga aérea de ocho dígitos (ejemplo: 001 87654321) para cada envío que desee rastrear. Haga clic en el botón de seguimiento para iniciar su búsqueda.</p>
+          
+          <!-- Paginated Content -->
+          <div class="pagination-container">
+            <!-- Page 1 -->
+            <div class="row page active  d-flex" id="page-1">
+              <div class="col-6 col-lg-4 mb-4">
+                <div class="card card-modal">
+                  <div class="card-body text-center">
+                    <img src="assets/index/Empresas/AereolinasArgentinas.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Aerolíneas Argentinas">
+                    <a href="https://cargo.aerolineas.com.ar/_culture_" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6  col-lg-4 mb-4">
+                <div class="card card-modal">
+                  <div class="card-body text-center">
+                    <img src="assets/index/Empresas/AirClass.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Air Class Cargo">
+                    <a href="https://www.freight.aero/tracking.asp" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4 mb-4">
+                <div class="card card-modal">
+                  <div class="card-body text-center">
+                    <img src="assets/index/Empresas/AirEuropa.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Air Europa">
+                    <a href="http://www.aireuropacargo.com/" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4 mb-4">
+                <div class="card card-modal">
+                  <div class="card-body text-center">
+                    <img src="assets/index/Empresas/american.webp" class="img-fluid mb-0 mb-md-3" alt="Logo American Airlines">
+                    <a href="https://www.aacargo.com/AACargo/tracking" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4 mb-4">
+                <div class="card card-modal">
+                  <div class="card-body text-center">
+                    <img src="assets/index/Empresas/AviancaCargo.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Avianca">
+                    <a href="https://www.aviancacargo.com/index.aspx" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-6 col-lg-4 mb-4">
+                <div class="card card-modal">
+                  <div class="card-body text-center">
+                    <img src="assets/index/Empresas/CopaAirlines.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Copa Airlines">
+                    <a href="https://www.copacargo.com/homepage.aspx?lang=es" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+           
+           
+           
+            </div>
+          
+            <!-- Page 2 -->
+            <div class="row page d-flex" id="page-2">
+              
+              <div class="col-6 col-lg-4 mb-4">
+                <div class="card card-modal">
+                  <div class="card-body text-center">
+                    <img src="assets/index/Empresas/Gol.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Gol">
+                    <a href="https://servicos.gollog.com.br/app/main/tracking" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-6 col-lg-4 mb-4">
+                <div class="card card-modal">
+                  <div class="card-body text-center">
+                    <img src="assets/index/Empresas/Iberia.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Iberia">
+                    <a href="https://e-tracking.net/tracking/air-tracking/iberia" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-6 col-lg-4 mb-4">
+                <div class="card card-modal">
+                  <div class="card-body text-center">
+                    <img src="assets/index/Empresas/LatamCargo.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Latam Cargo">
+                    <a href="https://www.latamcargo.com/en/trackshipment" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-6 col-lg-4 mb-4">
+                <div class="card card-modal">
+                  <div class="card-body text-center">
+                    <img src="assets/index/Empresas/Lufthansa.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Lufthansa Cargo">
+                    <a href="https://www.lufthansa-cargo.com/es/eservices/etracking" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-6 col-lg-4 mb-4">
+                <div class="card card-modal">
+                  <div class="card-body text-center">
+                    <img src="assets/index/Empresas/Taca.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Taca Peru">
+                    <a href="https://www.aviancacargo.com/index.aspx" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-6 col-lg-4 mb-4">
+                <div class="card card-modal">
+                  <div class="card-body text-center">
+                    <img src="assets/index/Empresas/Tampa.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Tampa">
+                    <a href="https://www.aviancacargo.com/index.aspx" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 mb-4">
-              <div class="card">
-                <div class="card-body text-center">
-                  <img src="assets/index/american.webp" class="img-fluid mb-3" alt="Logo american airlines">
-                  <a href="https://www.aacargo.com/AACargo/tracking" class="btn btn-primary" target="_blank">Rastrear
-                    Envío</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-4">
-              <div class="card">
-                <div class="card-body text-center">
-                  <img src="assets/index/latam.webp" class="img-fluid mb-3" alt="Logo latam cargo">
-                  <a href="https://www.latamcargo.com/en/trackshipment" class="btn btn-primary" target="_blank">Rastrear
-                    Envío</a>
-                </div>
-              </div>
-            </div>
+          
+    
           </div>
+          <!-- Pagination Controls -->
+          <div class="pagination-controls mt-4">
+            <button class="btn btn-secondary prev-page">Anterior</button>
+            <button class="btn btn-secondary next-page">Siguiente</button>
+          </div>
+  
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -110,19 +200,19 @@
       </div>
     </div>
   </div>
-
+  
 
   <section class="form-container container px-3 px-lg-5" id="nbcFormularioContacto" data-aos="fade-up"
     data-aos-delay="300">
     <div class="form-titles row text-center pb-4">
       <div class="col-12">
-        <p class="p-secondary">NBC CARGO</p>
+        <!-- <p class="p-secondary">NBC CARGO</p> -->
         <h1>CONTÁCTENOS</h1>
         <p class="p-main">Completa el formulario y nos pondremos en contacto contigo. <br>Estamos aquí para
           ayudarte con cualquier consulta que tengas.</p>
       </div>
     </div>
-    <form class="container-sm centrado-md" id="contactoForm" netlify action="contacto.html">
+    <form class="container-sm centrado-md" id="contactoForm" netlify action="contacto.html" >
       <div class="row g-3">
           <div class="col-12 col-md-6 mb-3">
               <input type="text" class="form-control lh-lg" id="name" name="name" aria-describedby="nombre"
@@ -184,6 +274,7 @@
                   <option value="aduanas">Gestión de Aduanas</option>
                   <option value="seguros">Seguros de Carga</option>
                   <option value="consultoria">Consultoría en Comercio Internacional</option>
+                  <option value="otro">Otro</option>
               </select>
               <div class="error" id="interesError"></div>
           </div>
@@ -209,23 +300,27 @@
         <h2>Encuentra NBC CARGO</h2>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12 col-md-4 col-lg-7 ">
+    <div class="row h-auto">
+      <div class="col-12 col-md-4 col-lg-7  order-2 order-md-1">
         <div class="embed-responsive embed-responsive-1by1 rounded-3 overflow-hidden">
-          <iframe class="embed-responsive-item w-100" title="Mapa de ubicación de NBC Cargo"
+          <iframe class="embed-responsive-item w-100 frameMaps" title="Mapa de ubicación de NBC Cargo"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13088.10806868654!2d-56.2028625!3d-34.9057715!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f802a72a40001%3A0xdf76923640cc53f0!2sNBC%20CARGO!5e0!3m2!1ses!2suy!4v1716953748482!5m2!1ses!2suy"
             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
-      <div class="col-12 col-md-8  col-lg-5">
-        <div class="info-container mt-4 p-4 gap-4 d-flex flex-column mt-md-0 rounded-3 overflow-hidden">
+      <div class="col-12 col-md-8  col-lg-5 order-1 order-md-2">
+        <div class="info-container mb-4 p-4 gap-4 d-flex flex-column mt-md-0 rounded-3 overflow-hidden">
           <div class="info-grupo" data-aos="fade-up" data-aos-delay="300">
             <p>DIRECCIÓN</p>
-            <p><b>Rincón 625</b></p>
+            <p><b>Rincón 625 - Of. 8 - CP: 11000, Ciudad Vieja, Montevideo, Uruguay.</b></p>
           </div>
           <div class="info-grupo" data-aos="fade-up" data-aos-delay="300">
             <p>TELÉFONO</p>
-            <p><b>+598 87 654 321</b></p>
+            <p><b>+(598) 2917 0616</b></p>
+          </div>
+          <div class="info-grupo" data-aos="fade-up" data-aos-delay="300">
+            <p>FAX</p>
+            <p><b>+ (598) 2917 0193</b></p>
           </div>
           <div class="info-grupo" data-aos="fade-up" data-aos-delay="300">
             <p>EMAIL</p>
@@ -235,8 +330,8 @@
             <a href="http://nbccargo.com.uy/" target="_blank" aria-label="Visitar NBC Cargo en Facebook">
               <i class="fa-brands fa-facebook"></i>
             </a>
-            <a href="http://nbccargo.com.uy/" target="_blank" aria-label="Visitar NBC Cargo en Twitter">
-              <i class="fa-brands fa-x-twitter"></i>
+            <a href="http://nbccargo.com.uy/" target="_blank" aria-label="Visitar NBC Cargo en Linkedin">
+              <i class="fa-brands fa-linkedin"></i>
             </a>
             <a href="http://nbccargo.com.uy/" target="_blank" aria-label="Visitar NBC Cargo en Instagram">
               <i class="fa-brands fa-instagram"></i>
@@ -268,7 +363,7 @@
         <ul class="p-0  d-flex flex-column gap-2">
           <li><a href="index.html#empresasAsociadas">Empresas Asociadas</a></li>
           <li><a href="index.html#nbcResumen">Sobre Nosotros</a></li>
-          <li><a href="index.html#nbcOficio">Nuestro oficio</a></li>
+          <li><a href="index.html#nbcOficio">Nuestros Servicios</a></li>
           <li><a href="index.html#faq">Preguntas frecuentes</a></li>
         </ul>
       </div>
@@ -279,8 +374,7 @@
       <div class="col">
         <h4 class="pb-2 title-text">Sobre Nosotros</h4>
         <ul class="p-0 d-flex flex-column gap-2">
-          <li><a href="sobreNosotros.html#nbcReconocimientos">Reconocimientos</a></li>
-          <li><a href="sobreNosotros.html#nbcHistoria">Historia de NBC</a></li>
+          <li><a href="sobreNosotros.html#nbcHistoria">Momentos destacados</a></li>
           <li><a href="sobreNosotros.html#nbcValores">Valores</a></li>
           <li><a href="sobreNosotros.html#nbcDirectivos">Directivos</a></li>
         </ul>
@@ -302,16 +396,16 @@
 
       <div class="footer__sociales-container d-flex gap-4">
         <ul class="sociales-container__info p-0 text-start d-flex flex-column gap-2">
-          <li><b class="pe-2">Teléfono:</b>+598 87 654 321</li>
+          <li><b class="pe-2">Teléfono:</b>+(598) 2917 0616</li>
           <li><b class="pe-2">Email:</b>nbccargo@gmail.com</li>
-          <li><b class="pe-2">Dirección:</b>Rincón 625</li>
+          <li><b class="pe-2">Dirección:</b>Rincón 625 - Of. 8 - CP: 11000, Ciudad Vieja, Montevideo, Uruguay</li>
         </ul>
         <div class="sociales-container__redes d-flex  gap-3">
           <a href="http://nbccargo.com.uy/" target="_blank" aria-label="Visitar NBC Cargo en Facebook">
             <i class="fa-brands fa-facebook"></i>
           </a>
-          <a href="http://nbccargo.com.uy/" target="_blank" aria-label="Visitar NBC Cargo en Twitter">
-            <i class="fa-brands fa-x-twitter"></i>
+          <a href="http://nbccargo.com.uy/" target="_blank" aria-label="Visitar NBC Cargo en Linkedin">
+            <i class="fa-brands fa-linkedin"></i>
           </a>
           <a href="http://nbccargo.com.uy/" target="_blank" aria-label="Visitar NBC Cargo en Instagram">
             <i class="fa-brands fa-instagram"></i>
@@ -332,7 +426,7 @@
   <script>
     AOS.init();
   </script>
-
+    <script src="js/modal.js"></script>
   <script src="js/contacto.js"></script>
 </body>
 

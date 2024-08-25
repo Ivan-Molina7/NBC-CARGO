@@ -21,10 +21,13 @@ iframe{
     }
 }
 
-
+.frameMaps{
+    height: 450px !important;
+   
+}
 
 .info-container{
-    height: 400px;
+    height: 450px;
     background-color: $fondo-terciario;
 
     a {
@@ -54,6 +57,18 @@ iframe{
         width: 45px;
         height: 45px;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .info-container{
+        height: 420px !important;
+    }
+
+    .frameMaps{
+        height: 420px !important;
+       
+    }
+
 }
 
 

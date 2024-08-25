@@ -18,6 +18,9 @@ i {
   font-size: 24px;
 }
 
+.mail-link{
+ color: $color-principal!important; ;
+}
 
 .logo-img {
   width: 150px;
@@ -124,9 +127,44 @@ a {
 }
 
 
+
+.card-modal{
+  min-height: 160px;
+
+
+  .card-body{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.2em;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.pagination-container {
+  width: 100%;
+
+}
+
+.page {
+  display: none !important;
+}
+
+.page.active {
+  display: flex !important;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-controls .btn {
+  width: 48%;
+}
+
+
 // Margenes
-
-
 
 
 section {
@@ -281,7 +319,16 @@ h4 {
   h4 {
     font-size: 18px !important;
   }
+  
+  .card-body{
 
+    justify-content: space-around !important;
+
+  }
+
+  .btn{
+    font-size: 12px !important;
+  }
  
 }
 

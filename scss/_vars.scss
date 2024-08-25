@@ -19,6 +19,23 @@ $fuente-secundaria: "Lato", serif;
 
 $margin: 150px;
 
+.btn-rastrear::before {
+  content: "Rastrear";
+  display: block;
+  /* Ajusta el estilo si es necesario */
+}
+
+.btn-rastrear {
+  position: relative;
+  overflow: hidden; /* Asegura que el contenido adicional no afecte el diseño */
+}
+
+@media (min-width: 768px) {
+  .btn-rastrear::before {
+    content: "Rastrear Envío";
+  }
+}
+
 .modal-content{
    color: $color-secundario !important;
 }

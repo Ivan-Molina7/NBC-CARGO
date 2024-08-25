@@ -64,71 +64,142 @@
   </div>
 
 <!-- Ventana modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="staticBackdropLabel">Rastrear Envío</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body p-4"> <!-- Añadido p-4 para más padding -->
+      <div class="modal-body p-4">
         <p class="mb-1 p-main">Explore la opción de seguimiento de envíos ofrecida por NBC Cargo, que le permite acceder a los servicios de rastreo proporcionados por nuestras empresas asociadas líderes en la industria.</p>
         <p class="mb-4 p-secondary">En las páginas de estas empresas necesitará ingresar el código de aerolínea de tres dígitos junto con el número de guía de carga aérea de ocho dígitos (ejemplo: 001 87654321) para cada envío que desee rastrear. Haga clic en el botón de seguimiento para iniciar su búsqueda.</p>
-      
-        <div class="row">
-          <div class="col-lg-4 mb-4">
-            <div class="card" >
-              <div class="card-body text-center">
-                <img src="assets/index/lufhtansa.webp" class="img-fluid mb-3" alt="Logo lufthansa">
-                <a href="https://www.lufthansa-cargo.com/es/eservices/etracking" class="btn btn-primary" target="_blank">Rastrear Envío</a>
+        
+        <!-- Paginated Content -->
+        <div class="pagination-container">
+          <!-- Page 1 -->
+          <div class="row page active  d-flex" id="page-1">
+            <div class="col-6 col-lg-4 mb-4">
+              <div class="card card-modal">
+                <div class="card-body text-center">
+                  <img src="assets/index/Empresas/AereolinasArgentinas.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Aerolíneas Argentinas">
+                  <a href="https://cargo.aerolineas.com.ar/_culture_" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6  col-lg-4 mb-4">
+              <div class="card card-modal">
+                <div class="card-body text-center">
+                  <img src="assets/index/Empresas/AirClass.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Air Class Cargo">
+                  <a href="https://www.freight.aero/tracking.asp" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4 mb-4">
+              <div class="card card-modal">
+                <div class="card-body text-center">
+                  <img src="assets/index/Empresas/AirEuropa.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Air Europa">
+                  <a href="http://www.aireuropacargo.com/" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4 mb-4">
+              <div class="card card-modal">
+                <div class="card-body text-center">
+                  <img src="assets/index/Empresas/american.webp" class="img-fluid mb-0 mb-md-3" alt="Logo American Airlines">
+                  <a href="https://www.aacargo.com/AACargo/tracking" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4 mb-4">
+              <div class="card card-modal">
+                <div class="card-body text-center">
+                  <img src="assets/index/Empresas/AviancaCargo.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Avianca">
+                  <a href="https://www.aviancacargo.com/index.aspx" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-6 col-lg-4 mb-4">
+              <div class="card card-modal">
+                <div class="card-body text-center">
+                  <img src="assets/index/Empresas/CopaAirlines.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Copa Airlines">
+                  <a href="https://www.copacargo.com/homepage.aspx?lang=es" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+         
+         
+         
+          </div>
+        
+          <!-- Page 2 -->
+          <div class="row page d-flex" id="page-2">
+            
+            <div class="col-6 col-lg-4 mb-4">
+              <div class="card card-modal">
+                <div class="card-body text-center">
+                  <img src="assets/index/Empresas/Gol.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Gol">
+                  <a href="https://servicos.gollog.com.br/app/main/tracking" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-6 col-lg-4 mb-4">
+              <div class="card card-modal">
+                <div class="card-body text-center">
+                  <img src="assets/index/Empresas/Iberia.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Iberia">
+                  <a href="https://e-tracking.net/tracking/air-tracking/iberia" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-6 col-lg-4 mb-4">
+              <div class="card card-modal">
+                <div class="card-body text-center">
+                  <img src="assets/index/Empresas/LatamCargo.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Latam Cargo">
+                  <a href="https://www.latamcargo.com/en/trackshipment" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-6 col-lg-4 mb-4">
+              <div class="card card-modal">
+                <div class="card-body text-center">
+                  <img src="assets/index/Empresas/Lufthansa.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Lufthansa Cargo">
+                  <a href="https://www.lufthansa-cargo.com/es/eservices/etracking" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-6 col-lg-4 mb-4">
+              <div class="card card-modal">
+                <div class="card-body text-center">
+                  <img src="assets/index/Empresas/Taca.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Taca Peru">
+                  <a href="https://www.aviancacargo.com/index.aspx" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-6 col-lg-4 mb-4">
+              <div class="card card-modal">
+                <div class="card-body text-center">
+                  <img src="assets/index/Empresas/Tampa.webp" class="img-fluid mb-0 mb-md-3" alt="Logo Tampa">
+                  <a href="https://www.aviancacargo.com/index.aspx" class="btn btn-primary btn-rastrear" target="_blank"></a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 mb-4">
-            <div class="card">
-              <div class="card-body text-center">
-                <img src="assets/index/american.webp" class="img-fluid mb-3" alt="Logo american airlines">
-                <a href="https://www.aacargo.com/AACargo/tracking" class="btn btn-primary" target="_blank">Rastrear Envío</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <div class="card">
-              <div class="card-body text-center">
-                <img src="assets/index/latam.webp" class="img-fluid mb-3" alt="Logo latam cargo">
-                <a href="https://www.latamcargo.com/en/trackshipment" class="btn btn-primary" target="_blank">Rastrear Envío</a>
-              </div>
-            </div>
-          </div>
+        
+  
+        </div>
+        <!-- Pagination Controls -->
+        <div class="pagination-controls mt-4">
+          <button class="btn btn-secondary prev-page">Anterior</button>
+          <button class="btn btn-secondary next-page">Siguiente</button>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4 mb-4">
-            <div class="card" >
-              <div class="card-body text-center">
-                <img src="assets/index/lufhtansa.webp" class="img-fluid mb-3" alt="Logo lufthansa">
-                <a href="https://www.lufthansa-cargo.com/es/eservices/etracking" class="btn btn-primary" target="_blank">Rastrear Envío</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <div class="card">
-              <div class="card-body text-center">
-                <img src="assets/index/american.webp" class="img-fluid mb-3" alt="Logo american airlines">
-                <a href="https://www.aacargo.com/AACargo/tracking" class="btn btn-primary" target="_blank">Rastrear Envío</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <div class="card">
-              <div class="card-body text-center">
-                <img src="assets/index/latam.webp" class="img-fluid mb-3" alt="Logo latam cargo">
-                <a href="https://www.latamcargo.com/en/trackshipment" class="btn btn-primary" target="_blank">Rastrear Envío</a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -137,85 +208,108 @@
   </div>
 </div>
 
- 
+
 
   <section class="empresas-asociadas section-0 py-5" id="empresasAsociadas">
 
-    <div id="carouselExample" class="carousel slide height-100" data-bs-ride="carousel">
+    <div id="carouselEmpresas" class="carousel slide height-100" data-bs-ride="carousel">
       <div class="carousel-inner height-100">
-  
-        <div class="carousel-item active height-100">
-          <div class="height-100 row container-md d-flex justify-content-center align-items-center m-auto gap-5 gap-sm-0">
-            <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column justify-content-center align-items-center px-2" data-aos="fade-up" data-aos-delay="500">
-              <figure class="empresa-asociada__thumbnail">
-                <img src="assets/index/lufhtansa.webp" alt="Logo de la empresa" class="img-responsive">
-              </figure>
-            </div>
-            <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="400">
-              <figure class="empresa-asociada__thumbnail">
-                <img src="assets/index/american.webp" alt="Logo de la empresa" class="img-responsive">
-              </figure>
-            </div>
-            <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="300">
-              <figure class="empresa-asociada__thumbnail">
-                <img src="assets/index/latam.webp" alt="Logo de la empresa" class="img-responsive">
-              </figure>
-            </div>
-          </div>
+          
+    <!-- Primer set de empresas -->
+    <div class="carousel-item active height-100">
+      <div class="height-100 row container-md d-flex justify-content-center align-items-center m-auto gap-5 gap-sm-0">
+        <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column justify-content-center align-items-center px-2" data-aos="fade-up" data-aos-delay="500">
+          <figure class="empresa-asociada__thumbnail">
+            <img src="assets/index/Empresas/AereolinasArgentinas.webp" alt="Aerolíneas Argentinas" class="img-responsive">
+          </figure>
         </div>
-  
-        <div class="carousel-item height-100">
-          <div class="height-100 row container-md d-flex justify-content-center align-items-center m-auto gap-5 gap-sm-0">
-            <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column justify-content-center align-items-center px-2" data-aos="fade-up" data-aos-delay="500">
-              <figure class="empresa-asociada__thumbnail">
-                <img src="assets/index/lufhtansa.webp" alt="Logo de la empresa 1" class="img-responsive">
-              </figure>
-            </div>
-            <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="400">
-              <figure class="empresa-asociada__thumbnail">
-                <img src="assets/index/american.webp" alt="Logo de la empresa 2" class="img-responsive">
-              </figure>
-            </div>
-            <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="300">
-              <figure class="empresa-asociada__thumbnail">
-                <img src="assets/index/latam.webp" alt="Logo de la empresa 3" class="img-responsive">
-              </figure>
-            </div>
-          </div>
+        <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="400">
+          <figure class="empresa-asociada__thumbnail">
+            <img src="assets/index/Empresas/AirClass.webp" alt="Air Class Cargo" class="img-responsive">
+          </figure>
         </div>
-  
-        <div class="carousel-item height-100">
-          <div class="height-100 row container-md d-flex justify-content-center align-items-center m-auto gap-5 gap-sm-0">
-            <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column justify-content-center align-items-center px-2" data-aos="fade-up" data-aos-delay="500">
-              <figure class="empresa-asociada__thumbnail">
-                <img src="assets/index/latam.webp" alt="Logo de la empresa 4" class="img-responsive">
-              </figure>
-            </div>
-            <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="400">
-              <figure class="empresa-asociada__thumbnail">
-                <img src="assets/index/lufhtansa.webp" alt="Logo de la empresa 5" class="img-responsive">
-              </figure>
-            </div>
-            <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="300">
-              <figure class="empresa-asociada__thumbnail">
-                <img src="assets/index/american.webp" alt="Logo de la empresa 6" class="img-responsive">
-              </figure>
-            </div>
-          </div>
+        <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="300">
+          <figure class="empresa-asociada__thumbnail">
+            <img src="assets/index/Empresas/AirEuropa.webp" alt="Air Europa" class="img-responsive">
+          </figure>
         </div>
-  
       </div>
-  
-      <button class="carousel-control-prev color-primario" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-   
+    </div>
+
+    <!-- Segundo set de empresas -->
+    <div class="carousel-item height-100">
+      <div class="height-100 row container-md d-flex justify-content-center align-items-center m-auto gap-5 gap-sm-0">
+        <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column justify-content-center align-items-center px-2" data-aos="fade-up" data-aos-delay="500">
+          <figure class="empresa-asociada__thumbnail">
+            <img src="assets/index/Empresas/american.webp" alt="American Airlines Cargo" class="img-responsive">
+          </figure>
+        </div>
+        <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="400">
+          <figure class="empresa-asociada__thumbnail">
+            <img src="assets/index/Empresas/AviancaCargo.webp" alt="Avianca Cargo" class="img-responsive">
+          </figure>
+        </div>
+        <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="300">
+          <figure class="empresa-asociada__thumbnail">
+            <img src="assets/index/Empresas/CopaAirlines.webp" alt="Copa Airlines" class="img-responsive">
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tercer set de empresas -->
+    <div class="carousel-item height-100">
+      <div class="height-100 row container-md d-flex justify-content-center align-items-center m-auto gap-5 gap-sm-0">
+        <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column justify-content-center align-items-center px-2" data-aos="fade-up" data-aos-delay="500">
+          <figure class="empresa-asociada__thumbnail">
+            <img src="assets/index/Empresas/Gol.webp" alt="Gol" class="img-responsive">
+          </figure>
+        </div>
+        <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="400">
+          <figure class="empresa-asociada__thumbnail">
+            <img src="assets/index/Empresas/Iberia.webp" alt="Iberia" class="img-responsive">
+          </figure>
+        </div>
+        <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="300">
+          <figure class="empresa-asociada__thumbnail">
+            <img src="assets/index/Empresas/latamCargo.webp" alt="LATAM Cargo" class="img-responsive">
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cuarto set de empresas -->
+    <div class="carousel-item height-100">
+      <div class="height-100 row container-md d-flex justify-content-center align-items-center m-auto gap-5 gap-sm-0">
+        <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column justify-content-center align-items-center px-2" data-aos="fade-up" data-aos-delay="500">
+          <figure class="empresa-asociada__thumbnail">
+            <img src="assets/index/Empresas/lufthansa.webp" alt="Lufthansa Cargo" class="img-responsive">
+          </figure>
+        </div>
+        <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="400">
+          <figure class="empresa-asociada__thumbnail">
+            <img src="assets/index/Empresas/Taca.webp" alt="Taca Peru" class="img-responsive">
+          </figure>
+        </div>
+        <div class="col-12 col-sm-4 empresa-asociada d-flex flex-column align-items-center px-2" data-aos="fade-up" data-aos-delay="300">
+          <figure class="empresa-asociada__thumbnail">
+            <img src="assets/index/Empresas/Tampa.webp" alt="Tampa Cargo" class="img-responsive">
+          </figure>
+        </div>
+      </div>
+    </div>
+      </div>
+    
+      <button class="carousel-control-prev color-primario" type="button" data-bs-target="#carouselEmpresas" data-bs-slide="prev">
         <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next color-primario" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <button class="carousel-control-next color-primario" type="button" data-bs-target="#carouselEmpresas" data-bs-slide="next">
         <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
         <span class="visually-hidden ">Next</span>
       </button>
     </div>
+    
   
   </section>
 
@@ -236,7 +330,7 @@
           nos distinguen en la industria, y estamos aquí para ayudarle a superar cualquier desafío logístico.
         </p>
         <div class="d-flex justify-content-center justify-content-md-start">
-          <a href="sobreNosotros.html#nbcHistoria" class="btn btn-primary">Saber más</a>
+          <a href="sobreNosotros.html#nbcDescription" class="btn btn-primary">Saber más</a>
         </div>
       </div>
       <figure class="nbc-resumen__thumbnail order-1 order-lg-2 col-lg-6 d-flex justify-content-center w-lg-50 p-2 p-sm-auto m-0 ">
@@ -273,7 +367,7 @@
           <img src="assets/index/metodo3.webp" alt="Servicio de Transporte" class="img--md" aria-describedby="Icon by https://freeicons.io/undefined/vehicles-and-transport-ship-sea-cruise-navigation-icon-44314 Vehicles and Transport">
         </figure>
         <h3>Servicio Marítimo</h3>
-        <p class="p-main">Brindamos soluciones <strong>internacionales de trasnporte maríritmo para cargas voluminosas y de larga distancia.</strong> Con alianzas estratégicas con las principales navieras, gestionamos envíos con eficiencia y seguridad, asegurando que sus mercancías lleguen a tiempo y en perfectas condiciones.</p>
+        <p class="p-main">Brindamos soluciones <strong>internacionales de transporte maríritmo para cargas voluminosas y de larga distancia.</strong> Con alianzas estratégicas con las principales navieras, gestionamos envíos con eficiencia y seguridad, asegurando que sus mercancías lleguen a tiempo y en perfectas condiciones.</p>
       </div>
   
     </div>
@@ -397,7 +491,7 @@
             <ul class="p-0  d-flex flex-column gap-2">
                 <li><a href="#empresasAsociadas">Empresas Asociadas</a></li>
                 <li><a href="#nbcResumen">Sobre Nosotros</a></li>
-                <li><a href="#nbcOficio">Nuestro oficio</a></li>
+                <li><a href="#nbcOficio">Nuestros Servicios</a></li>
                 <li><a href="#faq">Preguntas frecuentes</a></li>
             </ul>
         </div>
@@ -408,8 +502,7 @@
         <div class="col">
             <h4 class="pb-2 title-text">Sobre Nosotros</h4>
             <ul class="p-0 d-flex flex-column gap-2">
-                <li><a href="sobreNosotros.html#nbcReconocimientos">Reconocimientos</a></li>
-                <li><a href="sobreNosotros.html#nbcHistoria">Historia de NBC</a></li>
+                <li><a href="sobreNosotros.html#nbcHistoria">Momentos destacados</a></li>
                 <li><a href="sobreNosotros.html#nbcValores">Valores</a></li>
                 <li><a href="sobreNosotros.html#nbcDirectivos">Directivos</a></li>
             </ul>
@@ -431,16 +524,16 @@
 
         <div class="footer__sociales-container d-flex gap-4">
             <ul class="sociales-container__info p-0 text-start d-flex flex-column gap-2">
-                <li><b class="pe-2">Teléfono:</b>+598 87 654 321</li>
-                <li><b class="pe-2">Email:</b>nbccargo@gmail.com</li>
-                <li><b class="pe-2">Dirección:</b>Rincón 625</li>
+              <li><b class="pe-2">Teléfono:</b>+(598) 2917 0616</li>
+              <li><b class="pe-2">Email:</b>nbccargo@gmail.com</li>
+              <li><b class="pe-2">Dirección:</b>Rincón 625 - Of. 8 - CP: 11000, Ciudad Vieja, Montevideo, Uruguay</li>
             </ul>
             <div class="sociales-container__redes d-flex  gap-3">
               <a href="http://nbccargo.com.uy/" target="_blank" aria-label="Visitar NBC Cargo en Facebook">
                 <i class="fa-brands fa-facebook"></i>
             </a>
-            <a href="http://nbccargo.com.uy/" target="_blank" aria-label="Visitar NBC Cargo en Twitter">
-                <i class="fa-brands fa-x-twitter"></i>
+            <a href="http://nbccargo.com.uy/" target="_blank" aria-label="Visitar NBC Cargo en Linkedin">
+              <i class="fa-brands fa-linkedin"></i>
             </a>
             <a href="http://nbccargo.com.uy/" target="_blank" aria-label="Visitar NBC Cargo en Instagram">
                 <i class="fa-brands fa-instagram"></i>
@@ -478,6 +571,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <script>
       AOS.init();
     </script>
+    <script src="js/modal.js"></script>
     
 </body>
 

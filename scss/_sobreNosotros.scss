@@ -198,14 +198,29 @@
     padding: 100px 50px;
     background-color: $fondo-terciario;
     margin-bottom: 0;
-  }
 
+ 
+  }
+  
+
+  @media (max-width: 998px) {
+    .directivos-nbc{
+       
+    
+        img{
+            max-width: 70%;
+        }
+      }
+    
+}
 
 
 @media (max-width: 767px) {
     .reconocimientos{
         margin: 0 !important;
     }
+
+    
 }
 
 @media screen and (max-width: 600px) {
