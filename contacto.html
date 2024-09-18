@@ -13,6 +13,13 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/estilos.min.css">
   <title>Contacto - NBC CARGO</title>
+
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('JaJ-pdeRgix6S7r8Y')
+</script>
 </head>
 
 <body>
@@ -212,7 +219,7 @@
           ayudarte con cualquier consulta que tengas.</p>
       </div>
     </div>
-    <form class="container-sm centrado-md" id="contactoForm" netlify action="contacto.html" >
+    <form class="container-sm centrado-md" id="contactoForm"  method="POST" >
       <div class="row g-3">
           <div class="col-12 col-md-6 mb-3">
               <input type="text" class="form-control lh-lg" id="name" name="name" aria-describedby="nombre"
@@ -287,6 +294,7 @@
 
           <div class="col-12 mb-3 text-center">
               <button type="submit" class="btn btn-primary w-100 btn-submit">Enviar</button>
+              <div class="error" id="enviarMensaje"></div>
           </div>
       </div>
   </form>

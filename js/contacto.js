@@ -1,3 +1,7 @@
+
+const serviceID = 'default_service';
+const templateID = 'template_gr91w35';
+
 document.addEventListener('DOMContentLoaded', function() {
     function validateName() {
         const name = document.getElementById('name').value.trim();
@@ -5,11 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if (name.length < 2) {
             nameError.textContent = 'El nombre debe tener al menos 2 caracteres.';
             document.getElementById('name').classList.add('invalid');
-            document.querySelector('.btn-submit').disabled = true;
+            return false;
         } else {
             nameError.textContent = '';
             document.getElementById('name').classList.remove('invalid');
-            document.querySelector('.btn-submit').disabled = false;
+            return true;
         }
     }
 
@@ -20,11 +24,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!emailPattern.test(email)) {
             emailError.textContent = 'El correo electrónico no es válido.';
             document.getElementById('email').classList.add('invalid');
-            document.querySelector('.btn-submit').disabled = true;
+            return false;
         } else {
             emailError.textContent = '';
             document.getElementById('email').classList.remove('invalid');
-            document.querySelector('.btn-submit').disabled = false;
+            return true;
         }
     }
 
@@ -35,11 +39,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!telefonoPattern.test(telefono)) {
             telefonoError.textContent = 'El teléfono debe contener solo números.';
             document.getElementById('telefono').classList.add('invalid');
-            document.querySelector('.btn-submit').disabled = true;
+            return false;
         } else {
             telefonoError.textContent = '';
             document.getElementById('telefono').classList.remove('invalid');
-            document.querySelector('.btn-submit').disabled = false;
+            return true;
         }
     }
 
@@ -49,11 +53,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if (interes === '') {
             interesError.textContent = 'Debes seleccionar un interés.';
             document.getElementById('interes').classList.add('invalid');
-            document.querySelector('.btn-submit').disabled = true;
+            return false;
         } else {
             interesError.textContent = '';
             document.getElementById('interes').classList.remove('invalid');
-            document.querySelector('.btn-submit').disabled = false;
+            return true;
         }
     }
 
@@ -63,34 +67,56 @@ document.addEventListener('DOMContentLoaded', function() {
         if (comentarios === '') {
             comentariosError.textContent = 'Los comentarios son obligatorios.';
             document.getElementById('comentarios').classList.add('invalid');
-            document.querySelector('.btn-submit').disabled = true;
+            return false;
         } else {
             comentariosError.textContent = '';
             document.getElementById('comentarios').classList.remove('invalid');
-            document.querySelector('.btn-submit').disabled = false;
+            return true;
         }
     }
 
+    // Asignar eventos a los campos para la validación en tiempo real
     document.getElementById('name').addEventListener('blur', validateName);
     document.getElementById('email').addEventListener('blur', validateEmail);
     document.getElementById('telefono').addEventListener('blur', validateTelefono);
     document.getElementById('interes').addEventListener('blur', validateInteres);
     document.getElementById('comentarios').addEventListener('blur', validateComentarios);
 
+    // Enviar el formulario si las validaciones pasan
     document.getElementById('contactoForm').addEventListener('submit', function(event) {
-        validateName();
-        validateEmail();
-        validateTelefono();
-        validateInteres();
-        validateComentarios();
+        // Evita el envío por defecto del formulario
+        event.preventDefault();
 
-        // Comprobar si hay errores visibles
-        const errors = document.querySelectorAll('.error');
-        const hasErrors = Array.from(errors).some(error => error.textContent !== '');
+        // Validar los campos
+        const isValidName = validateName();
+        const isValidEmail = validateEmail();
+        const isValidTelefono = validateTelefono();
+        const isValidInteres = validateInteres();
+        const isValidComentarios = validateComentarios();
 
-        if (hasErrors) {
-            event.preventDefault();
-      
+        // Si todas las validaciones son correctas, proceder a enviar el formulario
+        if (isValidName && isValidEmail && isValidTelefono && isValidInteres && isValidComentarios) {
+            emailjs.sendForm(serviceID, templateID, this)
+          
+                .then(function(response) {
+                    let mensajeExistoso = document.getElementById('enviarMensaje')
+                    mensajeExistoso.style.color = 'green';
+                    mensajeExistoso.textContent = 'Mensaje enviado con exito. Gracias por contactarnos.';
+
+                    setTimeout(function() {
+                        mensajeExistoso.textContent = '';
+                    }, 5000);
+
+                    document.getElementById('contactoForm').reset();
+                }, function(error) {
+                    let mensajeError = document.getElementById('enviarMensaje')
+                    mensajeError.style.color = 'rgb(211, 12, 12)';
+                    mensajeError.textContent = 'Algo salió mal. Por favor, inténtelo de nuevo.';
+
+                    setTimeout(function() {
+                        mensajeError.textContent = '';
+                    }, 5000);
+                });
         }
     });
 });
